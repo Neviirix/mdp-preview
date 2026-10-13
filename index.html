@@ -1,0 +1,1561 @@
+<title>My Documented Property</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%20width%3D%2232%22%20height%3D%2232%22%20aria-hidden%3D%22true%22%3E%20%3Crect%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2226%22%20fill%3D%22%23143C78%22/%3E%20%3Cg%20transform%3D%22translate%2810%208%29%20scale%280.84%29%22%3E%20%3Crect%20x%3D%2283%22%20y%3D%2216%22%20width%3D%2211%22%20height%3D%2224%22%20rx%3D%222%22%20fill%3D%22%23FFFFFF%22/%3E%20%3Cpath%20d%3D%22M9%2054%20L60%2014%20L111%2054%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2212%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%20%3Cpath%20d%3D%22M24%2046%20V100%20Q24%20106%2030%20106%20H90%20Q96%20106%2096%20100%20V46%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2212%22%20stroke-linejoin%3D%22round%22/%3E%20%3Ccircle%20cx%3D%2288%22%20cy%3D%2290%22%20r%3D%2229%22%20fill%3D%22%23143C78%22/%3E%20%3Ccircle%20cx%3D%2288%22%20cy%3D%2290%22%20r%3D%2224%22%20fill%3D%22%232E9E48%22/%3E%20%3Cpath%20d%3D%22M77.3%2090.7%20L85.3%2098.7%20L100.0%2082.0%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%226.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%20%3C/g%3E%20%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="theme-color" content="#143C78">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="My Documented Property">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F3F0EB; --surface:#FFFFFF; --surface-2:#ECE8E1; --line:#DFD8CD; --line-strong:#C9C0B2;
+  --ink:#1B232D; --muted:#56606B; --accent:#143C78; --accent-ink:#FFFFFF; --accent-soft:#DFE7F3; --brand-green:#2E9E48;
+  --warn:#94460F; --warn-soft:#F6E3D1; --danger:#A12626; --danger-soft:#F7DDDD;
+  --ok:#2C6636; --ok-soft:#DCEDDC; --violet:#4B3F86; --violet-soft:#E7E3F3;
+  --shadow:0 10px 30px rgba(27,35,45,.16);
+  --display:'Poppins','Segoe UI',system-ui,sans-serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#12171C; --surface:#1A2128; --surface-2:#232B33; --line:#2F3841; --line-strong:#445059;
+    --ink:#E8ECEF; --muted:#A3ADB7; --accent:#8FB4EC; --accent-ink:#0B1730; --accent-soft:#1A2840; --brand-green:#5BC777;
+    --warn:#F0A56E; --warn-soft:#382515; --danger:#F29090; --danger-soft:#3A1D1D;
+    --ok:#8ACB92; --ok-soft:#1A3120; --violet:#B6ABEF; --violet-soft:#29243F;
+    --shadow:0 10px 30px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#12171C; --surface:#1A2128; --surface-2:#232B33; --line:#2F3841; --line-strong:#445059;
+  --ink:#E8ECEF; --muted:#A3ADB7; --accent:#8FB4EC; --accent-ink:#0B1730; --accent-soft:#1A2840; --brand-green:#5BC777;
+  --warn:#F0A56E; --warn-soft:#382515; --danger:#F29090; --danger-soft:#3A1D1D;
+  --ok:#8ACB92; --ok-soft:#1A3120; --violet:#B6ABEF; --violet-soft:#29243F;
+  --shadow:0 10px 30px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.shell{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);padding:12px 16px 10px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)}
+.top-row{display:flex;align-items:center;gap:8px}
+.brand{display:flex;align-items:center;gap:8px;flex-grow:1;min-width:0}
+.brand b{font-family:'Poppins',var(--body);font-size:17px;line-height:1.15;font-weight:700;letter-spacing:-.01em;min-width:0;color:var(--accent)}
+.brand b .g{color:var(--brand-green)}
+.brand .mark{display:flex;flex-shrink:0}
+.brand .mark svg{display:block;border-radius:9px}
+.brand .tag{align-self:center}
+@media (max-width:440px){.brand .tag{display:none}.brand b{font-size:16px}}
+.btn-row>.btn{white-space:nowrap;padding:0 10px}
+.tag{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line-strong);border-radius:6px;padding:2px 6px}
+.icon-btn{position:relative;width:44px;height:44px;border-radius:22px;border:1px solid var(--line);background:var(--surface);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.badge{position:absolute;top:4px;right:4px;min-width:18px;height:18px;border-radius:9px;background:var(--danger);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 5px}
+.role{display:grid;grid-template-columns:auto 1fr 1fr;align-items:center;gap:6px;background:var(--surface-2);border-radius:12px;padding:4px}
+.role span{font-size:13px;color:var(--muted);padding:0 8px}
+.role button{height:36px;border:none;border-radius:9px;background:transparent;font-weight:600;font-size:15px;color:var(--muted)}
+.role button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+/* Main */
+.main{padding:16px;display:flex;flex-direction:column;gap:18px;flex-grow:1}
+h1,h2,h3{margin:0;text-wrap:balance}
+.h1{font-family:var(--display);font-weight:600;font-size:26px;line-height:1.2;letter-spacing:-.01em}
+.h2{font-family:var(--display);font-weight:600;font-size:20px;line-height:1.25}
+.label{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.xs{font-size:13px}
+.stack{display:flex;flex-direction:column;gap:10px}
+.stack-lg{display:flex;flex-direction:column;gap:14px}
+.row{display:flex;align-items:center;gap:10px}
+.between{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column}
+.list>*+*{border-top:1px solid var(--line)}
+.item{display:flex;gap:12px;align-items:center;padding:13px 14px;background:none;border:none;text-align:left;width:100%}
+button.item:hover{background:var(--surface-2)}
+.list>button.item:first-child{border-radius:14px 14px 0 0}
+.list>button.item:last-child{border-radius:0 0 14px 14px}
+.list>button.item:only-child{border-radius:14px}
+.item-main{display:flex;flex-direction:column;gap:1px;flex-grow:1;min-width:0}
+.item-title{font-weight:600}
+.ico{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ico.warn{background:var(--warn-soft);color:var(--warn)}
+.ico.acc{background:var(--accent-soft);color:var(--accent)}
+.ico.vio{background:var(--violet-soft);color:var(--violet)}
+.ico.ok{background:var(--ok-soft);color:var(--ok)}
+.ico.dan{background:var(--danger-soft);color:var(--danger)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:0;text-align:left}
+.stat b{font-size:28px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:12px;font-size:12px;font-weight:700;white-space:nowrap;flex-shrink:0}
+.p-warn{background:var(--warn-soft);color:var(--warn)}
+.p-acc{background:var(--accent-soft);color:var(--accent)}
+.p-vio{background:var(--violet-soft);color:var(--violet)}
+.p-ok{background:var(--ok-soft);color:var(--ok)}
+.p-dan{background:var(--danger-soft);color:var(--danger)}
+.p-mute{background:var(--surface-2);color:var(--muted)}
+.btn{min-height:48px;border-radius:13px;border:1px solid var(--line-strong);background:var(--surface);font-weight:700;font-size:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 16px;text-decoration:none}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.dan{color:var(--danger);border-color:var(--danger)}
+.btn.sm{min-height:40px;font-size:14px;border-radius:11px;padding:0 12px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn-row{display:flex;gap:10px}
+.btn-row>.btn{flex:1 1 0}
+.linkbtn{background:none;border:none;color:var(--accent);font-weight:700;padding:8px 0;min-height:44px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chip{height:36px;padding:0 14px;border-radius:18px;border:1px solid var(--line-strong);background:var(--surface);font-size:14px;white-space:nowrap;flex-shrink:0}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:600}
+.back{display:flex;align-items:center;gap:4px;margin-left:-10px}
+.back button{width:44px;height:44px;border:none;background:none;display:flex;align-items:center;justify-content:center;border-radius:22px}
+.note{background:var(--surface-2);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--muted)}
+.note.warn{background:var(--warn-soft);color:var(--warn)}
+.note.dan{background:var(--danger-soft);color:var(--danger)}
+/* Photos */
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ph{aspect-ratio:1;max-width:100%;border-radius:12px;overflow:hidden;background:var(--surface-2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--muted);font-size:12px;position:relative;border:1px solid var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.sample{padding-bottom:34px}
+.ph .ts{position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);color:#fff;font-size:11px;line-height:1.3;padding:4px 5px;text-align:center;font-variant-numeric:tabular-nums}
+.ph.sample{background:repeating-linear-gradient(135deg,var(--surface-2) 0 10px,var(--bg) 10px 20px)}
+.addph input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:0}
+.addph{position:relative;aspect-ratio:1;border-radius:12px;border:1.5px dashed var(--line-strong);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--muted);font-size:13px;cursor:pointer;background:transparent}
+/* Forms */
+.field{display:flex;flex-direction:column;gap:6px}
+.field>label,.field>.flabel{font-size:14px;font-weight:600}
+.inp{height:48px;border-radius:12px;border:1px solid var(--line-strong);background:var(--surface);padding:0 12px;font-size:16px;width:100%}
+textarea.inp{height:auto;min-height:84px;padding:10px 12px;resize:vertical}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.seg button{min-height:44px;border-radius:10px;border:1px solid var(--line-strong);background:var(--surface);font-size:14px;font-weight:600;padding:4px}
+.seg button[aria-pressed="true"].c-Good{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.seg button[aria-pressed="true"].c-Fair{background:var(--warn-soft);border-color:var(--warn);color:var(--warn)}
+.seg button[aria-pressed="true"].c-Damaged{background:var(--danger-soft);border-color:var(--danger);color:var(--danger)}
+.urg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.urg label{position:relative;border:1px solid var(--line-strong);border-radius:12px;background:var(--surface);padding:8px 6px;display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;min-height:58px;justify-content:center}
+.urg input{position:absolute;opacity:0}
+.urg label:has(input:checked){border:2px solid var(--accent);background:var(--accent-soft)}
+.urg label:has(input:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
+.urg b{font-size:15px}
+.urg span{font-size:12px;color:var(--muted)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.check input{width:22px;height:22px;margin-top:1px;accent-color:var(--accent);flex-shrink:0}
+/* Stepper */
+.steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}
+.steps div{display:flex;flex-direction:column;gap:5px;font-size:11px;color:var(--muted);text-align:center;line-height:1.15}
+.steps i{display:block;height:6px;border-radius:3px;background:var(--line)}
+.steps .done i{background:var(--accent)}
+.steps .cur{color:var(--ink);font-weight:700}
+.steps .cur i{background:var(--accent)}
+/* Activity */
+.act{display:flex;gap:10px;padding:12px 14px}
+.av{width:32px;height:32px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
+.av.landlord{background:var(--accent-soft);color:var(--accent)}
+.av.tenant{background:var(--violet-soft);color:var(--violet)}
+.av.system,.av.prevtenant{background:var(--surface-2);color:var(--muted)}
+/* Nav */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.nav-in{max-width:480px;margin:0 auto;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));height:68px}
+.nav button{border:none;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:12px;color:var(--muted);position:relative}
+.nav button[aria-current="page"]{color:var(--accent);font-weight:700}
+.nav .dot{position:absolute;top:10px;left:calc(50% + 8px);width:9px;height:9px;border-radius:5px;background:var(--danger)}
+/* Sheet */
+.scrim{position:fixed;inset:0;background:rgba(10,14,18,.45);z-index:40;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--bg);width:100%;max-width:480px;max-height:92vh;overflow-y:auto;border-radius:20px 20px 0 0;padding:8px 16px calc(20px + env(safe-area-inset-bottom,0px));box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px}
+.grab{width:40px;height:5px;border-radius:3px;background:var(--line-strong);margin:4px auto 0}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;gap:8px;position:sticky;top:-8px;background:var(--bg);padding:6px 0;z-index:1}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:60;background:var(--ink);color:var(--bg);padding:11px 16px;border-radius:12px;font-size:15px;font-weight:600;max-width:calc(100% - 32px);box-shadow:var(--shadow)}
+/* Signature */
+.sig{width:100%;height:150px;border:1.5px dashed var(--line-strong);border-radius:12px;background:var(--surface);touch-action:none;display:block}
+.sigimg{height:60px;max-width:100%;background:#fff;border-radius:8px;border:1px solid var(--line)}
+/* Report */
+.report{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px 18px;display:flex;flex-direction:column;gap:18px;font-size:14px}
+.report h3{font-family:var(--display);font-weight:600;font-size:17px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.chg{color:var(--danger);font-weight:700}
+.progress{height:6px;border-radius:3px;background:var(--line)}
+.progress i{display:block;height:6px;border-radius:3px;background:var(--accent)}
+.cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+/* Sign-in */
+.login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+.login-card{width:100%;max-width:420px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px 22px;display:flex;flex-direction:column;gap:16px;box-shadow:var(--shadow)}
+.brand-lockup{display:flex;align-items:center;gap:12px}
+.brand-lockup svg{display:block;border-radius:13px}
+.wm{font-family:'Poppins',var(--body);font-weight:700;font-size:22px;line-height:1.1;color:var(--accent);display:block}
+.wm .g{color:var(--brand-green)}
+.by{font-family:'Poppins',var(--body);font-size:13px;font-weight:500;color:var(--muted)}
+.login-foot{font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:flex-start;line-height:1.4}
+.login-foot svg{flex-shrink:0;margin-top:2px}
+.code-inp{letter-spacing:.4em;font-size:22px;text-align:center;font-variant-numeric:tabular-nums}
+/* Portal: shared */
+.nav-brand,.nav-foot,.nav .nav-help{display:none}
+.home-grid{display:flex;flex-direction:column;gap:18px}
+.home-grid .col{display:flex;flex-direction:column;gap:18px}
+.home-grid .side{order:-1}
+.kv{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.kv span:first-child{color:var(--muted)}
+.kv span:last-child{text-align:right}
+/* Portal: computer and tablet layout */
+@media (min-width:900px){
+  .shell{max-width:none;margin:0 0 0 248px;padding-bottom:40px}
+  .top{flex-direction:row;align-items:center;gap:16px;padding:14px max(28px,calc((100% - 1040px)/2))}
+  .top .brand .mark,.top .brand b{display:none}
+  .top .brand .tag{display:inline-block}
+  .top-row{order:2;flex-grow:1}
+  .role{order:1;width:360px;flex-shrink:0}
+  .main{width:100%;max-width:1096px;margin:0 auto;padding:28px;gap:22px}
+  .h1{font-size:30px}
+  .nav{top:0;right:auto;width:248px;border-top:none;border-right:1px solid var(--line);padding:18px 14px 14px;display:flex;flex-direction:column;gap:14px}
+  .nav-brand{display:flex;align-items:center;gap:10px;padding:2px 6px 10px}
+  .nav-brand svg{display:block;border-radius:9px}
+  .nav-brand b{font-family:'Poppins',var(--body);font-weight:700;font-size:15px;line-height:1.15;color:var(--accent)}
+  .nav-brand .g{color:var(--brand-green)}
+  .nav-in{display:flex;flex-direction:column;height:auto;gap:4px;max-width:none;flex-grow:1;margin:0;width:100%}
+  .nav .nav-help{display:flex;flex-direction:row;justify-content:flex-start;gap:12px;height:44px;padding:0 14px;border-radius:12px;font-size:15px;margin-bottom:8px}
+  .nav .nav-help:hover{background:var(--surface-2)}
+  .nav-in button{flex-direction:row;justify-content:flex-start;gap:12px;height:46px;padding:0 14px;border-radius:12px;font-size:15px}
+  .nav-in button:hover{background:var(--surface-2)}
+  .nav-in button[aria-current="page"]{background:var(--accent-soft)}
+  .nav .dot{top:9px;left:30px}
+  .nav-foot{display:flex;align-items:center;gap:10px;padding:12px 4px 0;border-top:1px solid var(--line)}
+  .nav-foot .item-main span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .home-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:22px;align-items:start}
+  .home-grid .side{order:0}
+  .scrim{align-items:center;padding:24px}
+  .sheet{border-radius:20px;max-width:580px;max-height:86vh}
+  .grab{display:none}
+  .toast{bottom:24px;left:calc(50% + 124px)}
+}
+/* Backup */
+.tree{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px;overflow-x:auto}
+.tree ul{list-style:none;margin:0;padding:0 0 0 18px;border-left:1px dashed var(--line-strong);margin-left:7px}
+.tree>ul{padding-left:0;border:none;margin-left:0}
+.tree li{padding:3px 0}
+.tf{display:inline-flex;gap:8px;align-items:flex-start;line-height:1.35}
+.tf svg{flex-shrink:0;margin-top:1px;color:var(--accent)}
+.tf .xs{display:block}
+/* Public website */
+.site{min-height:100vh;background:var(--bg)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.proto-strip{background:var(--accent);color:var(--accent-ink);font-size:13px;text-align:center;padding:6px 16px}
+.site-top{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.site-top .wrap{display:flex;align-items:center;gap:20px;height:74px}
+.lock{display:flex;align-items:center;gap:10px;background:none;border:none;padding:0;text-align:left}
+.lock svg{display:block;border-radius:9px}
+.lock b{font-family:'Poppins',var(--body);font-weight:700;font-size:18px;line-height:1.1;color:var(--accent)}
+.lock .g{color:var(--brand-green)}
+.lock small{display:block;font-family:'Poppins',var(--body);font-weight:500;font-size:11.5px;color:var(--muted)}
+.s-links{display:flex;gap:2px;flex-grow:1;justify-content:center}
+.s-links button{background:none;border:none;padding:8px 10px;white-space:nowrap;border-radius:8px;font-weight:600;font-size:15px;color:var(--muted)}
+.s-links button:hover{color:var(--ink);background:var(--surface-2)}
+.s-actions{display:flex;gap:10px;margin-left:auto}
+.s-actions .btn{white-space:nowrap}
+.s-h{font-family:'Poppins',var(--body);font-weight:700;letter-spacing:-.02em;color:var(--ink);margin:0;text-wrap:balance}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-green)}
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(36px,4.6vw,56px);line-height:1.06}
+.hero h1 span{color:var(--accent)}
+.hero p.lead{font-size:19px;line-height:1.55;color:var(--muted);margin:0;max-width:34em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.cta .btn{min-height:52px;padding:0 22px;font-size:16px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted)}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+.trust svg{color:var(--brand-green)}
+.mock{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.mock-bar{height:38px;background:var(--surface-2);display:flex;align-items:center;gap:7px;padding:0 14px;border-bottom:1px solid var(--line)}
+.mock-bar i{width:10px;height:10px;border-radius:5px;background:var(--line-strong)}
+.mock-bar span{margin-left:10px;font-size:12px;color:var(--muted);background:var(--surface);border-radius:6px;padding:3px 10px}
+.mock-body{display:grid;grid-template-columns:120px 1fr;min-height:330px}
+.mock-side{border-right:1px solid var(--line);padding:14px 10px;display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--muted)}
+.mock-side div{padding:7px 9px;border-radius:8px;display:flex;align-items:center;gap:7px}
+.mock-side div.on{background:var(--accent-soft);color:var(--accent);font-weight:700}
+.mock-main{padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.mock-main .stats b{font-size:22px}
+.mock-main .item{padding:10px 12px}
+.mock-main .item-title{font-size:14px}
+.mock-main .ico{width:32px;height:32px;border-radius:9px}
+.sec{padding:76px 0}
+.sec.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{display:flex;flex-direction:column;gap:10px;max-width:640px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(28px,3.2vw,38px);line-height:1.15}
+.sec-head p{font-size:18px;color:var(--muted);margin:0;line-height:1.55}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.grid2s{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.sec.alt .tile{background:var(--bg)}
+.tile h3{font-family:'Poppins',var(--body);font-weight:600;font-size:18px;margin:0}
+.tile p{margin:0;color:var(--muted);line-height:1.55}
+.num{width:38px;height:38px;border-radius:19px;background:var(--accent);color:var(--accent-ink);display:flex;align-items:center;justify-content:center;font-family:'Poppins',var(--body);font-weight:700}
+.ticks{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+.ticks svg{color:var(--brand-green);flex-shrink:0;margin-top:2px}
+.price{max-width:640px;margin:0 auto;text-align:left;border:2px solid var(--accent)}
+.vs-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.vs{width:100%;border-collapse:collapse;min-width:640px;font-size:16px}
+.vs th,.vs td{padding:14px 18px;text-align:center;border-bottom:1px solid var(--line);vertical-align:middle}
+.vs tr:last-child td{border-bottom:0}
+.vs th:first-child,.vs td:first-child{text-align:left;color:var(--ink);font-weight:600}
+.vs thead th{font-family:'Poppins',var(--body);font-size:15px;color:var(--muted);font-weight:600;background:var(--surface-2)}
+.vs .us{background:var(--accent-soft);color:var(--accent);font-weight:700}
+.vs thead th.us{color:var(--accent);background:var(--accent-soft);font-size:16px}
+.vs .y{color:var(--ok);font-size:20px;font-weight:700}
+.vs .n{color:var(--muted);font-size:18px}
+.vs .s{color:var(--muted);font-size:15px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:640px){.vs{font-size:13.5px;min-width:0;table-layout:fixed}.vs th,.vs td{padding:10px 6px}.vs th:first-child,.vs td:first-child{width:40%;padding-left:12px}.vs thead th{font-size:11px;letter-spacing:.02em}.vs .s{font-size:12.5px}.vs .lg{display:none}}
+.vs .sm{display:none}@media (max-width:640px){.vs .sm{display:inline}}
+.vs-note{font-size:14px;color:var(--muted);margin:14px 0 0}
+.pcard{gap:14px}
+.pcard.feat{border:2px solid var(--accent)}
+.pp{display:flex;flex-direction:column;gap:2px}
+.pcard .big{font-family:'Poppins',var(--body);font-weight:700;font-size:40px;line-height:1.1;color:var(--accent)}
+.founding{display:flex;gap:10px;align-items:center;background:var(--accent-soft);color:var(--accent);border-radius:14px;padding:14px 18px;margin-bottom:20px;font-size:16px}
+.price .big{font-family:'Poppins',var(--body);font-weight:700;font-size:30px;color:var(--accent);line-height:1.15}
+.faq{max-width:800px;display:flex;flex-direction:column;gap:10px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0 20px}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px;padding:18px 0;list-style-position:outside}
+.faq details p{margin:0 0 18px;color:var(--muted);line-height:1.55}
+.final{text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+.site-foot{border-top:1px solid var(--line);padding:32px 0;font-size:14px;color:var(--muted)}
+.site-foot .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.back-home{align-self:flex-start;min-height:32px;padding:0;display:inline-flex;align-items:center;gap:4px}
+@media (max-width:980px){
+  .s-links{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .s-actions .btn.pri{display:none}
+  .grid3,.grid2s{grid-template-columns:1fr}
+  .hero{padding:44px 0}
+  .sec{padding:52px 0}
+  .mock-body{grid-template-columns:1fr}
+  .mock-side{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sheet{animation:up .22s ease-out}
+  .toast{animation:fade .2s ease-out}
+  @keyframes up{from{transform:translateY(30px);opacity:.4}to{transform:none;opacity:1}}
+  @keyframes fade{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+}
+</style>
+
+<div id="app"></div>
+<div id="sheet" class="scrim" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(function(){
+'use strict';
+/* ---------- Config ---------- */
+var APP_NAME = 'My Documented Property';  // product name: change here only
+var STORE = 'bothkeys-prototype-v2';
+var session=null,login={view:'site',step:'email',email:'',role:'landlord'};
+function loadSession(){try{session=localStorage.getItem('mdp-session');}catch(e){session=null;}}
+function saveSession(){try{if(session)localStorage.setItem('mdp-session',session);else localStorage.removeItem('mdp-session');}catch(e){}}
+var LOGO_ICON = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="36" height="36" aria-hidden="true"> <rect width="120" height="120" rx="26" fill="#143C78"/> <g transform="translate(14 12) scale(0.78)"> <rect x="83" y="16" width="11" height="24" rx="2" fill="#FFFFFF"/> <path d="M9 54 L60 14 L111 54" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/> <path d="M24 46 V100 Q24 106 30 106 H90 Q96 106 96 100 V46" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linejoin="round"/> <path d="M42 50 H63 L75 62 V92 Q75 95 72 95 H45 Q42 95 42 92 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linejoin="round"/> <path d="M62 50 V63 H75" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linejoin="round"/> <line x1="50" y1="68" x2="64" y2="68" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/> <line x1="50" y1="77" x2="64" y2="77" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/> <line x1="50" y1="86" x2="64" y2="86" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/> <circle cx="94" cy="98" r="23" fill="#143C78"/> <circle cx="94" cy="98" r="18" fill="#2E9E48"/> <path d="M86.0 98.5 L92.0 104.5 L103.0 92.0" fill="none" stroke="#FFFFFF" stroke-width="5.0" stroke-linecap="round" stroke-linejoin="round"/> </g> </svg>';
+
+/* ---------- Helpers ---------- */
+var DAY = 864e5;
+function $(s){return document.querySelector(s);}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function uid(){return Math.random().toString(36).slice(2,10);}
+function d0(off){var d=new Date();d.setHours(0,0,0,0);if(off)d.setDate(d.getDate()+off);return d;}
+function isoD(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function parseD(s){var p=s.split('-').map(Number);return new Date(p[0],p[1]-1,p[2]);}
+function daysFrom(s){return Math.round((parseD(s)-d0())/DAY);}
+function ts(off,h,m){var d=d0(off);d.setHours(h||10,m||0,0,0);return d.getTime();}
+function fmtD(v,withYear){var d=typeof v==='string'?parseD(v):new Date(v);var o={month:'short',day:'numeric',year:'numeric'}; /* always show the year */return d.toLocaleDateString('en-US',o);}
+function fmtWD(v){var d=typeof v==='string'?parseD(v):new Date(v);return d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',year:'numeric'});}
+function fmtT(v){return new Date(v).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});}
+function fmtTZ(v){return new Date(v).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZoneName:'short'});}
+function fmtDT(v){return fmtD(v,true)+', '+fmtTZ(v);} // records always show the year
+function addMonths(d,n){return new Date(d.getFullYear(),d.getMonth()+n,d.getDate());}
+function money(n){return '$'+Number(n).toLocaleString('en-CA');}
+function plural(n,w){return n+' '+(n===1?w:(/[^aeiou]y$/.test(w)?w.slice(0,-1)+'ies':w+'s'));}
+
+/* ---------- Icons ---------- */
+function ic(name,size){
+  size=size||20;
+  var p={
+    help:'<circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.4c-.6.3-1 .8-1 1.4v.6"/><path d="M12 16.8v.2"/>',
+    key:'<circle cx="8" cy="12" r="4.5"/><path d="M12.5 12H21M18 12v3M21 12v2.5"/>',
+    bell:'<path d="M6 9a6 6 0 0 1 12 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 0 0 4 0"/>',
+    menu:'<path d="M4 7h16M4 12h16M4 17h16"/>',
+    home:'<path d="M3 11l9-7 9 7v9H3z"/>',
+    cal:'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/>',
+    wrench:'<path d="M15 12l-8.4 8.4a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 14.6L21.5 10.7"/><path d="M21.5 10.7l-1.9-1.9a2 2 0 0 1-.6-1.4V6.4l-2.3-2.3A6 6 0 0 0 12.5 2.3H9.2l.9.8A6.2 6.2 0 0 1 12 7.6V9.6l2.2 2.2h1.2a2 2 0 0 1 1.4.6l2 2"/>',
+    camera:'<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
+    doc:'<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/>',
+    clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    drop:'<path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/>',
+    plus:'<path d="M12 5v14M5 12h14"/>',
+    back:'<path d="M15 5l-7 7 7 7"/>',
+    check:'<path d="M5 12l4 4 10-10"/>',
+    checkc:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>',
+    dollar:'<path d="M12 3v18M16 7.5c-.8-1.2-2.2-2-4-2-2.2 0-4 1.2-4 3s1.8 2.6 4 3 4 1.2 4 3-1.8 3-4 3c-1.8 0-3.2-.8-4-2"/>',
+    list:'<path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/>',
+    pen:'<path d="M4 20l4-1 11-11-3-3L5 16z"/>',
+    x:'<path d="M6 6l12 12M18 6L6 18"/>',
+    image:'<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/>',
+    lock:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+    alert:'<path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/>',
+    export:'<path d="M12 4v11M7 9l5-5 5 5M5 20h14"/>',
+    chev:'<path d="M9 5l7 7-7 7"/>',
+    folder:'<path d="M3 6.5h6.5l2 2H21V19H3z"/>',
+    logout:'<path d="M14 4h5v16h-5"/><path d="M10 8l-4 4 4 4M6 12h10"/>',
+    shield:'<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>'
+  }[name]||'';
+  return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>';
+}
+
+/* ---------- Sample data ---------- */
+var ROOMS=[
+  {name:'Entry and hall',items:['Front door and lock','Floors','Walls','Closet']},
+  {name:'Living room',items:['Floors','Walls and paint','Windows and screens','Lights and outlets']},
+  {name:'Kitchen',items:['Countertop','Cabinets and doors','Sink and faucet','Fridge','Stove and oven']},
+  {name:'Bedroom',items:['Floors','Walls and paint','Window and lock','Closet']},
+  {name:'Bathroom',items:['Toilet','Sink and vanity','Tub and shower','Exhaust fan','Floors']}
+];
+function sample(){
+  var t=d0();
+  var moveIn=new Date(t.getFullYear()-1,8,1);
+  var miOff=Math.round((moveIn-t)/DAY);
+  var leaseEnd=new Date(moveIn.getFullYear()+2,7,31);
+  var fair={'Living room|Floors':'Light scratches near the patio door','Bedroom|Walls and paint':'Two small nail holes above the dresser','Bathroom|Tub and shower':'Grout discoloured in one corner'};
+  var mi={id:'w1',kind:'Move-in',status:'signed',date:isoD(moveIn),startedBy:'landlord',baseId:null,
+    rooms:ROOMS.map(function(r){return {name:r.name,items:r.items.map(function(n){var k=r.name+'|'+n;return {name:n,cond:fair[k]?'Fair':'Good',note:fair[k]||''};}),
+      photos:[{src:null,label:'Sample photo',at:ts(miOff,10,5)},{src:null,label:'Sample photo',at:ts(miOff,10,7)}]};}),
+    sig:{landlord:{name:'Morgan Properties',at:ts(miOff,11,2),img:null,note:''},tenant:{name:'Jordan Lee',at:ts(miOff,11,5),img:null,note:''}}};
+  var s={
+    role:'tenant',
+    unit:{address:'12 Maple St, Unit B',city:'Hamilton, ON',landlord:'Morgan Properties',tenant:'Jordan Lee',tenancyFrom:isoD(d0(miOff-14)),prevTenant:'Alex Chen',prevFrom:isoD(d0(miOff-730)),prevTo:isoD(d0(miOff-18)),leaseStart:isoD(moveIn),leaseEnd:isoD(leaseEnd),rent:1850,rentDay:1},
+    tasks:[
+      {id:'t1',title:'Replace furnace filter',owner:'tenant',months:3,due:isoD(d0(-5)),history:[{at:ts(-97,18,20),by:'tenant',note:'Used 16x25x1 filter',photos:[]}]},
+      {id:'t2',title:'Test smoke and CO alarms',owner:'tenant',months:1,due:isoD(d0(7)),history:[{at:ts(-23,19,0),by:'tenant',note:'Both alarms beep on test',photos:[]}]},
+      {id:'t3',title:'Clean gutters',owner:'landlord',months:6,due:isoD(d0(26)),history:[]},
+      {id:'t4',title:'Furnace service',owner:'landlord',months:12,due:isoD(d0(40)),history:[]},
+      {id:'t5',title:'Shut off outdoor taps',owner:'tenant',months:12,due:isoD(d0(47)),history:[]},
+      {id:'t6',title:'Flush hot water tank',owner:'landlord',months:12,due:isoD(d0(120)),history:[]},
+      {id:'t7',title:'Clean dryer vent',owner:'landlord',months:12,due:isoD(d0(343)),history:[{at:ts(-22,14,10),by:'landlord',note:'Vent cleaned, lint trap line clear. Receipt in Documents.',photos:[{src:null,label:'Sample photo',at:ts(-22,14,12)}]}]}
+    ],
+    repairs:[
+      {id:'r1',title:'Kitchen sink leaking under cabinet',room:'Kitchen',type:'Plumbing',urgency:'Soon',status:'scheduled',createdAt:ts(-1,8,15),by:'tenant',
+        desc:'Water pooling under the sink since this morning. Towel placed; the shut-off valve is under the sink.',
+        photos:[{src:null,label:'Sample photo',at:ts(-1,8,12)},{src:null,label:'Sample photo',at:ts(-1,8,13)}],
+        schedule:{date:isoD(d0(1)),window:'9 to 11 AM',note:'Plumber from Hamilton Plumbing Co. will come in with me.',ack:null},
+        events:[
+          {at:ts(-1,8,15),by:'tenant',kind:'status',text:'Reported the issue'},
+          {at:ts(-1,9,2),by:'landlord',kind:'status',text:'Marked as seen'},
+          {at:ts(-1,9,5),by:'landlord',kind:'comment',text:'Thanks Jordan. Please keep the valve closed and use the bathroom sink for now.'},
+          {at:ts(-1,12,40),by:'landlord',kind:'status',text:'Scheduled a visit: '+fmtWD(d0(1))+', 9 to 11 AM. Written entry notice given.'}
+        ]},
+      {id:'r2',title:'Bedroom window won’t lock',room:'Bedroom',type:'Windows and doors',urgency:'Routine',status:'submitted',createdAt:ts(0,7,40),by:'tenant',
+        desc:'The latch turns but does not catch. Window still closes fully.',photos:[{src:null,label:'Sample photo',at:ts(0,7,38)}],schedule:null,
+        events:[{at:ts(0,7,40),by:'tenant',kind:'status',text:'Reported the issue'}]},
+      {id:'r3',title:'Bathroom fan very noisy',room:'Bathroom',type:'Electrical',urgency:'Routine',status:'confirmed',createdAt:ts(-41,20,5),by:'tenant',
+        desc:'Rattling loudly when switched on.',photos:[],schedule:{date:isoD(d0(-33)),window:'3 to 5 PM',note:'',ack:ts(-35,9,0)},
+        events:[
+          {at:ts(-41,20,5),by:'tenant',kind:'status',text:'Reported the issue'},
+          {at:ts(-40,8,30),by:'landlord',kind:'status',text:'Marked as seen'},
+          {at:ts(-36,10,0),by:'landlord',kind:'status',text:'Scheduled a visit: '+fmtWD(d0(-33))+', 3 to 5 PM. Written entry notice given.'},
+          {at:ts(-35,9,0),by:'tenant',kind:'status',text:'Acknowledged the entry notice'},
+          {at:ts(-33,15,20),by:'landlord',kind:'status',text:'Started work'},
+          {at:ts(-33,16,45),by:'landlord',kind:'status',text:'Marked as fixed: replaced fan motor. Invoice added to Documents.'},
+          {at:ts(-32,8,10),by:'tenant',kind:'status',text:'Confirmed the fix'}
+        ]}
+    ],
+    walks:[mi],
+    docs:[
+      {id:'d1',title:'Residential tenancy agreement',cat:'Lease',vis:'shared',owner:'landlord',addedAt:ts(miOff-12,15,0),expires:isoD(leaseEnd),file:null},
+      {id:'d2',title:'Lease addendum: parking spot 14',cat:'Lease',vis:'shared',owner:'landlord',addedAt:ts(miOff-12,15,5),expires:null,file:null},
+      {id:'d3',title:'Fridge user manual',cat:'Manuals',vis:'shared',owner:'landlord',addedAt:ts(miOff-5,9,0),expires:null,file:null},
+      {id:'d4',title:'Furnace owner’s manual',cat:'Manuals',vis:'shared',owner:'landlord',addedAt:ts(miOff-5,9,3),expires:null,file:null},
+      {id:'d5',title:'Dishwasher warranty',cat:'Warranties',vis:'shared',owner:'landlord',addedAt:ts(miOff-5,9,6),expires:isoD(d0(106)),file:null},
+      {id:'d6',title:'Tenant insurance certificate',cat:'Insurance',vis:'shared',owner:'tenant',addedAt:ts(miOff-2,19,0),expires:isoD(d0(21)),file:null},
+      {id:'d7',title:'Invoice: bathroom fan motor',cat:'Receipts',vis:'shared',owner:'landlord',addedAt:ts(-33,17,0),expires:null,file:null,repair:'r3'},
+      {id:'d8',title:'Invoice: dryer vent cleaning',cat:'Receipts',vis:'shared',owner:'landlord',addedAt:ts(-22,14,20),expires:null,file:null},
+      {id:'d9',title:'My moving checklist',cat:'Other',vis:'private',owner:'tenant',addedAt:ts(miOff-20,21,0),expires:null,file:null}
+    ],
+    timeline:[],
+    notifs:[
+      {id:'n1',for:'tenant',at:ts(-1,12,40),text:'Morgan Properties scheduled the kitchen sink visit for '+fmtWD(d0(1))+', 9 to 11 AM.',read:false,go:{tab:'repairs',repair:'r1'}},
+      {id:'n2',for:'landlord',at:ts(0,7,40),text:'Jordan Lee reported: Bedroom window won’t lock.',read:false,go:{tab:'repairs',repair:'r2'}},
+      {id:'n3',for:'tenant',at:ts(-3,9,0),text:'Furnace filter is due in 2 days.',read:true,go:{tab:'upkeep'}}
+    ]
+  };
+  // Build timeline from sample history
+  var tl=[];
+  // Previous tenancy (visible to the landlord only)
+  tl.push({at:ts(miOff-730,11,0),by:'landlord',kind:'records',text:'Signed the move-in walkthrough (tenant: Alex Chen)'});
+  tl.push({at:ts(miOff-729,18,30),by:'prevtenant',kind:'records',text:'Signed the move-in walkthrough'});
+  tl.push({at:ts(miOff-520,8,10),by:'prevtenant',kind:'repairs',text:'Reported the issue (No hot water)'});
+  tl.push({at:ts(miOff-519,15,0),by:'landlord',kind:'repairs',text:'Marked as fixed: replaced water heater thermostat (No hot water)'});
+  tl.push({at:ts(miOff-300,17,0),by:'prevtenant',kind:'upkeep',text:'Completed: Replace furnace filter'});
+  tl.push({at:ts(miOff-19,10,0),by:'landlord',kind:'records',text:'Signed the move-out walkthrough (tenant: Alex Chen). Minor wear noted in living room.'});
+  tl.push({at:ts(miOff-19,10,20),by:'prevtenant',kind:'records',text:'Signed the move-out walkthrough'});
+  tl.push({at:ts(miOff-18,9,0),by:'landlord',kind:'records',text:'Closed the tenancy of Alex Chen'});
+  tl.push({at:ts(miOff-12,15,0),by:'landlord',kind:'docs',text:'Added the tenancy agreement'});
+  tl.push({at:mi.sig.landlord.at,by:'landlord',kind:'records',text:'Signed the move-in walkthrough'});
+  tl.push({at:mi.sig.tenant.at,by:'tenant',kind:'records',text:'Signed the move-in walkthrough'});
+  s.repairs.forEach(function(r){r.events.forEach(function(e){if(e.kind==='status')tl.push({at:e.at,by:e.by,kind:'repairs',text:e.text+' ('+r.title+')'});});});
+  s.tasks.forEach(function(k){k.history.forEach(function(h){tl.push({at:h.at,by:h.by,kind:'upkeep',text:'Completed: '+k.title});});});
+  tl.push({at:ts(-33,17,0),by:'landlord',kind:'docs',text:'Added Invoice: bathroom fan motor'});
+  tl.push({at:ts(-22,14,20),by:'landlord',kind:'docs',text:'Added Invoice: dryer vent cleaning'});
+  s.timeline=tl.map(function(x){x.id=uid();return x;});
+  return s;
+}
+
+/* ---------- State ---------- */
+var state, ui={tab:'home',repair:null,walk:null,room:0,review:false,compare:false,timeline:false,report:false,docCat:'All',docQ:'',taskFilter:'All',tlFilter:'all',pending:[],resetArm:false,exp:{range:'all',sec:{repairs:true,upkeep:true,records:true,docs:true,history:true}}};
+var storageOk=true;
+function load(){
+  try{var raw=localStorage.getItem(STORE);if(raw){state=JSON.parse(raw);return;}}catch(e){storageOk=false;}
+  state=sample();
+}
+function save(){
+  try{localStorage.setItem(STORE,JSON.stringify(state));storageOk=true;}
+  catch(e){storageOk=false;}
+}
+function me(){return state.role;}
+function other(r){return (r||state.role)==='landlord'?'tenant':'landlord';}
+function nameOf(r){return r==='landlord'?state.unit.landlord:r==='tenant'?state.unit.tenant:r==='prevtenant'?(state.unit.prevTenant||'Previous tenant'):APP_NAME;}
+function tenantFrom(){var u=state.unit;return parseD(u.tenancyFrom||u.leaseStart).getTime();}
+function visibleTimeline(){var from=me()==='tenant'?tenantFrom():0;return state.timeline.filter(function(e){return e.at>=from;});}
+function exportFrom(){if(me()==='tenant')return tenantFrom();var r=ui.exp.range;return r==='current'?tenantFrom():r==='12m'?Date.now()-365*DAY:0;}
+function roleLabel(r){return r==='landlord'?'Landlord':'Tenant';}
+function initials(r){return nameOf(r).split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase();}
+function log(kind,text){state.timeline.push({id:uid(),at:Date.now(),by:me(),kind:kind,text:text});}
+function notify(forRole,text,go){state.notifs.push({id:uid(),for:forRole,at:Date.now(),text:text,read:false,go:go||null});}
+function getR(id){return state.repairs.find(function(r){return r.id===id;});}
+function getW(id){return state.walks.find(function(w){return w.id===id;});}
+function activeTasks(){return state.tasks.filter(function(t){return !t.removed&&!(t.months===0&&t.history.length);});}
+function getT(id){return state.tasks.find(function(t){return t.id===id;});}
+function getDoc(id){return state.docs.find(function(d){return d.id===id;});}
+function visibleDocs(){return state.docs.filter(function(d){return d.vis==='shared'||d.owner===me();});}
+function unread(){return state.notifs.filter(function(n){return n.for===me()&&!n.read;}).length;}
+
+/* ---------- Toast ---------- */
+var toastTimer;
+function toast(msg){var t=$('#toast');t.textContent=msg;t.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(function(){t.hidden=true;},2800);}
+
+/* ---------- Photos ---------- */
+function readImage(file){
+  return new Promise(function(res,rej){
+    var fr=new FileReader();
+    fr.onload=function(){
+      var img=new Image();
+      img.onload=function(){
+        var max=900,w=img.width,h=img.height,s=Math.min(1,max/Math.max(w,h));
+        var c=document.createElement('canvas');c.width=Math.round(w*s);c.height=Math.round(h*s);
+        c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+        res(c.toDataURL('image/jpeg',0.7));
+      };
+      img.onerror=function(){rej(new Error('Not an image'));};
+      img.src=fr.result;
+    };
+    fr.onerror=rej;fr.readAsDataURL(file);
+  });
+}
+function photoStamp(at){return '<span class="ts">'+esc(fmtD(at,true))+'<br>'+esc(fmtTZ(at))+'</span>';}
+function photoTile(p){
+  if(p.src)return '<div class="ph"><img src="'+p.src+'" alt="Photo taken '+esc(fmtDT(p.at))+'">'+photoStamp(p.at)+'</div>';
+  return '<div class="ph sample">'+ic('image',22)+'<span>Sample photo</span>'+photoStamp(p.at)+'</div>';
+}
+function photoGrid(list,addTarget){
+  var h=list.map(photoTile).join('');
+  if(addTarget)h+='<label class="addph">'+ic('camera',22)+'<span>Add photo</span><input type="file" accept="image/*" multiple aria-label="Add photo" data-file="'+addTarget+'"></label>'+
+    '<button type="button" class="addph" data-a="testPhoto" data-t="'+addTarget+'">'+ic('image',22)+'<span>Use test photo</span></button>';
+  if(!h)return '';
+  return '<div class="photos">'+h+'</div>';
+}
+
+/* ---------- Derived ---------- */
+function dueLabel(due){
+  var n=daysFrom(due);
+  if(n<0)return plural(-n,'day')+' overdue';
+  if(n===0)return 'Due today';
+  if(n===1)return 'Due tomorrow';
+  if(n<=30)return 'Due '+fmtD(due)+' · in '+n+' days';
+  return 'Due '+fmtD(due);
+}
+function cycleLabel(m){return m===0?'One time':m===1?'Every month':m===12?'Every year':'Every '+m+' months';}
+var STATUS=['submitted','seen','scheduled','progress','fixed','confirmed'];
+var STATUS_LABEL={submitted:'Submitted',seen:'Seen',scheduled:'Scheduled',progress:'In progress',fixed:'Fixed',confirmed:'Confirmed'};
+var STATUS_PILL={submitted:'p-warn',seen:'p-vio',scheduled:'p-acc',progress:'p-acc',fixed:'p-ok',confirmed:'p-mute'};
+function repairNeed(r,role){
+  if(role==='landlord'){
+    if(r.status==='submitted')return 'Review request';
+    if(r.status==='seen')return 'Schedule a visit';
+    if(r.status==='progress')return 'Mark fixed when done';
+  }else{
+    if(r.status==='scheduled'&&r.schedule&&!r.schedule.ack)return 'Acknowledge visit';
+    if(r.status==='fixed')return 'Confirm the fix';
+  }
+  return null;
+}
+function walkProgress(w){var tot=0,done=0;w.rooms.forEach(function(r){r.items.forEach(function(i){tot++;if(i.cond)done++;});});return {tot:tot,done:done};}
+function roomDone(r){return r.items.every(function(i){return i.cond;});}
+function walkStatusText(w){
+  if(w.status==='draft'){var p=walkProgress(w);return p.done+' of '+p.tot+' items checked';}
+  if(w.status==='signing'){var who=!w.sig.landlord?'landlord':!w.sig.tenant?'tenant':null;return who?'Waiting for '+roleLabel(who).toLowerCase()+' signature':'Signed by both';}
+  return 'Signed by both';
+}
+function nextRent(){var t=d0(),day=state.unit.rentDay;var d=new Date(t.getFullYear(),t.getMonth(),day);if(d<t)d=new Date(t.getFullYear(),t.getMonth()+1,day);return d;}
+function attention(){
+  var role=me(),out=[];
+  activeTasks().forEach(function(t){var n=daysFrom(t.due);if(t.owner===role&&n<=3)out.push({kind:'task',id:t.id,title:t.title,sub:(n<0?'Your task · ':'Your task · ')+dueLabel(t.due),pill:n<0?['Overdue','p-warn']:['Soon','p-acc'],icon:['clock',n<0?'warn':'acc']});});
+  state.repairs.forEach(function(r){var need=repairNeed(r,role);if(need)out.push({kind:'repair',id:r.id,title:r.title,sub:'Repair · '+need,pill:[STATUS_LABEL[r.status],STATUS_PILL[r.status]],icon:['wrench','acc']});});
+  state.walks.forEach(function(w){if(w.status==='signing'&&!w.sig[role])out.push({kind:'walk',id:w.id,title:w.kind+' walkthrough',sub:'Needs your signature',pill:['Sign','p-vio'],icon:['pen','vio']});
+    if(w.status==='draft'&&w.startedBy===role)out.push({kind:'walk',id:w.id,title:w.kind+' walkthrough',sub:'In progress · '+walkStatusText(w),pill:['Draft','p-mute'],icon:['camera','vio']});});
+  visibleDocs().forEach(function(d){if(d.expires){var n=daysFrom(d.expires);if(n>=0&&n<=30)out.push({kind:'doc',id:d.id,title:d.title+' expires',sub:'Document · '+fmtD(d.expires)+' (in '+n+' days)',pill:null,icon:['doc','vio']});}});
+  return out;
+}
+
+/* ---------- Header / Nav ---------- */
+function header(){
+  var u=unread();
+  return '<header class="top"><div class="top-row"><div class="brand"><span class="mark">'+LOGO_ICON+'</span><b>My Documented <span class="g">Property</span></b><span class="tag">Prototype</span></div>'+
+    '<button class="icon-btn" data-a="notifs" aria-label="Notifications'+(u?', '+u+' unread':'')+'">'+ic('bell')+(u?'<span class="badge">'+u+'</span>':'')+'</button>'+
+    '<button class="icon-btn" data-a="menu" aria-label="Menu">'+ic('menu')+'</button></div>'+
+    '<div class="role" role="group" aria-label="Viewing as"><span>Viewing as</span>'+
+    '<button data-a="role" data-r="landlord" aria-pressed="'+(me()==='landlord')+'">Landlord</button>'+
+    '<button data-a="role" data-r="tenant" aria-pressed="'+(me()==='tenant')+'">Tenant</button></div></header>';
+}
+function nav(){
+  var tabs=[['home','Home','home'],['upkeep','Upkeep','cal'],['repairs','Repairs','wrench'],['records','Records','camera'],['docs','Docs','doc']];
+  var need={repairs:state.repairs.some(function(r){return repairNeed(r,me());}),upkeep:activeTasks().some(function(t){return t.owner===me()&&daysFrom(t.due)<0;}),records:state.walks.some(function(w){return w.status==='signing'&&!w.sig[me()];})};
+  var brand='<div class="nav-brand"><span>'+LOGO_ICON+'</span><b>My Documented <span class="g">Property</span></b></div>';
+  var foot='<div class="nav-foot"><div class="av '+me()+'">'+initials(me())+'</div><div class="item-main"><span class="small" style="font-weight:700">'+esc(nameOf(me()))+'</span><span class="xs muted">'+esc(session||'')+'</span></div><button class="icon-btn" data-a="signOut" aria-label="Sign out" title="Sign out">'+ic('logout',18)+'</button></div>';
+  return '<nav class="nav" aria-label="Main">'+brand+'<div class="nav-in">'+tabs.map(function(t){
+    return '<button data-a="tab" data-t="'+t[0]+'"'+(ui.tab===t[0]?' aria-current="page"':'')+'>'+ic(t[2],22)+t[1]+(need[t[0]]?'<span class="dot" aria-label="needs attention"></span>':'')+'</button>';
+  }).join('')+'</div><button class="nav-help" data-a="help">'+ic('help',20)+'Help and feedback</button>'+foot+'</nav>';
+}
+function backBar(action,label){return '<div class="back"><button data-a="'+action+'" aria-label="Back">'+ic('back',22)+'</button><span class="small muted">'+esc(label)+'</span></div>';}
+
+/* ---------- Screens ---------- */
+function screen(){
+  if(ui.report)return viewReport();
+  if(ui.timeline)return viewTimeline();
+  if(ui.tab==='home')return viewHome();
+  if(ui.tab==='upkeep')return viewUpkeep();
+  if(ui.tab==='repairs')return ui.repair?viewRepair():viewRepairs();
+  if(ui.tab==='records'){if(ui.walk){return ui.review?viewReview():ui.compare?viewCompare():viewWalk();}return viewRecords();}
+  if(ui.tab==='docs')return viewDocs();
+  return '';
+}
+
+function viewHome(){
+  var u=state.unit,role=me();
+  var overdue=activeTasks().filter(function(t){return daysFrom(t.due)<0;}).length;
+  var open=state.repairs.filter(function(r){return r.status!=='confirmed';}).length;
+  var soon=activeTasks().filter(function(t){var n=daysFrom(t.due);return n>=0&&n<=30;}).length;
+  var rent=nextRent(),rn=Math.round((rent-d0())/DAY);
+  var att=attention();
+  var h='<section class="stack"><span class="small muted">Signed in as '+esc(nameOf(role))+' ('+roleLabel(role).toLowerCase()+')</span>'+
+    '<h1 class="h1">'+esc(u.address)+'</h1><span class="small muted">'+esc(u.city)+' · '+(role==='landlord'?'Tenant: '+esc(u.tenant):'Landlord: '+esc(u.landlord))+' · Lease to '+fmtD(u.leaseEnd,true)+'</span></section>';
+  h+='<div class="stats">'+
+    '<button class="stat" data-a="tab" data-t="upkeep"><b style="color:var(--warn)">'+overdue+'</b><span>Overdue '+(overdue===1?'task':'tasks')+'</span></button>'+
+    '<button class="stat" data-a="tab" data-t="repairs"><b style="color:var(--accent)">'+open+'</b><span>Open '+(open===1?'repair':'repairs')+'</span></button>'+
+    '<button class="stat" data-a="tab" data-t="upkeep"><b>'+soon+'</b><span>Due in 30 days</span></button></div>';
+  var b=bill(),planCard='';
+  if(role==='landlord'){
+    planCard=b.trialDays!=null&&!b.units?'<div class="card stack" style="border:2px solid var(--accent)"><div class="between"><span class="item-title">Free trial: '+plural(b.trialDays,'day')+' left</span><span class="pill p-acc">Trial</span></div><span class="small muted">1 unit, every feature. No card needed. Buy units any time to keep going.</span><button class="btn pri sm" data-a="buyOpen">Buy units</button></div>':
+      '<div class="card stack"><div class="between"><span class="item-title">'+plural(b.units,'unit')+' owned</span>'+(b.founding?'<span class="pill p-ok">Founding price</span>':'')+'</div><span class="small muted">Storage: '+(5*b.units+10*b.storage10)+' GB in total.</span><button class="btn sm" data-a="buyOpen">Buy more units</button></div>';
+  }else if(!b.tenantCopy){
+    planCard='<div class="card stack"><span class="item-title">Free while you’re invited</span><span class="small muted">Keep this rental’s record for good, even after you move out.</span><button class="btn sm" data-a="ownCopy">Buy your own copy ($29)</button></div>';
+  }else planCard='<div class="card stack"><div class="between"><span class="item-title">Your own copy</span><span class="pill p-ok">Owned</span></div><span class="small muted">This rental’s record is yours to keep. Storage: '+(2+5*b.tenantExtra5)+' GB.</span></div>';
+  var rentCard='<div class="card row"><div class="ico acc">'+ic('dollar')+'</div><div class="item-main"><span class="item-title">Rent: '+money(u.rent)+' due '+fmtD(isoD(rent))+'</span><span class="small muted">'+(rn===0?'Due today':'In '+plural(rn,'day'))+' · '+(role==='tenant'?'Reminder only. Pay the usual way.':'Tenant gets a reminder 3 days before.')+'</span></div></div>';
+  var attHtml='<section class="stack"><div class="label">Needs your attention</div>'+(att.length?'<div class="list">'+att.map(function(a){return '<button class="item" data-a="go" data-kind="'+a.kind+'" data-id="'+a.id+'"><div class="ico '+a.icon[1]+'">'+ic(a.icon[0])+'</div><div class="item-main"><span class="item-title">'+esc(a.title)+'</span><span class="small muted">'+esc(a.sub)+'</span></div>'+(a.pill?'<span class="pill '+a.pill[1]+'">'+esc(a.pill[0])+'</span>':'')+'</button>';}).join('')+'</div>':'<div class="note">You’re all caught up.</div>')+'</section>';
+  var acts='<div class="btn-row">'+(role==='tenant'?'<button class="btn pri" data-a="newRepair">'+ic('plus',18)+'Report issue</button>':'<button class="btn pri" data-a="newTask">'+ic('plus',18)+'Add upkeep task</button>')+
+    '<button class="btn" data-a="newWalk">'+ic('camera',18)+'Walkthrough</button></div>';
+  var hist='<div class="list"><button class="item" data-a="timeline"><div class="ico vio">'+ic('list')+'</div><div class="item-main"><span class="item-title">View &amp; export unit history</span><span class="small muted">'+plural(visibleTimeline().length,'entry')+', all time-stamped. Export a dated report for your files.</span></div>'+ic('chev',18)+'</button></div>';
+  var unitCard='<section class="card stack"><div class="label">Unit details</div>'+
+    [['Address',esc(u.address)+', '+esc(u.city)],['Landlord',esc(u.landlord)],['Tenant',esc(u.tenant)],['Lease',fmtD(u.leaseStart,true)+' to '+fmtD(u.leaseEnd,true)],['Rent',money(u.rent)+' on day '+u.rentDay+' of each month']].map(function(x){return '<div class="kv"><span>'+x[0]+'</span><span>'+x[1]+'</span></div>';}).join('')+
+    '<div class="stack" style="gap:6px;margin-top:4px"><div class="kv"><span>Storage</span><span>1.2 GB of 5 GB used</span></div><div class="progress" aria-label="1.2 of 5 GB used"><i style="width:24%"></i></div>'+
+    (role==='landlord'?'<span class="xs muted">Photos are shrunk on upload. Extra storage: $19 per 10 GB.</span>':'<span class="xs muted">Your uploads count toward this unit’s storage.</span>')+'</div></section>';
+  var bk='<div class="list"><button class="item" data-a="backup"><div class="ico acc">'+ic('folder')+'</div><div class="item-main"><span class="item-title">Download a full backup</span><span class="small muted">'+(role==='landlord'?'All your properties, organized by address':'Everything from your tenancy')+'</span></div>'+ic('chev',18)+'</button></div>';
+  h+='<div class="home-grid"><div class="col">'+attHtml+hist+'</div><div class="col side">'+planCard+rentCard+acts+unitCard+bk+'</div></div>';
+  return h;
+}
+
+function viewUpkeep(){
+  var role=me(),f=ui.taskFilter;
+  var tasks=activeTasks().slice().sort(function(a,b){return a.due<b.due?-1:1;}).filter(function(t){return f==='All'||(f==='Mine'?t.owner===role:t.owner!==role);});
+  var groups=[['Overdue',function(n){return n<0;}],['Next 30 days',function(n){return n>=0&&n<=30;}],['Later',function(n){return n>30;}]];
+  var h='<div class="between"><h1 class="h1">Upkeep</h1>'+(role==='landlord'?'<button class="btn sm" data-a="newTask">'+ic('plus',16)+'Add task</button>':'')+'</div>';
+  h+='<div class="chips" role="group" aria-label="Filter tasks">'+['All','Mine',roleLabel(other())+'’s'].map(function(c,i){var key=i===2?'Theirs':c;return '<button class="chip" data-a="taskFilter" data-f="'+key+'" aria-pressed="'+(f===key)+'">'+c+'</button>';}).join('')+'</div>';
+  groups.forEach(function(g){
+    var list=tasks.filter(function(t){return g[1](daysFrom(t.due));});
+    if(!list.length)return;
+    h+='<section class="stack"><div class="label"'+(g[0]==='Overdue'?' style="color:var(--warn)"':'')+'>'+g[0]+'</div><div class="list">'+list.map(function(t){
+      var n=daysFrom(t.due),mine=t.owner===role;
+      return '<div class="item" style="flex-wrap:wrap"><button class="item" data-a="task" data-id="'+t.id+'" style="padding:0;flex:1 1 200px"><div class="item-main"><span class="item-title">'+esc(t.title)+'</span><span class="small muted">'+cycleLabel(t.months)+' · '+roleLabel(t.owner)+'</span><span class="small" style="color:'+(n<0?'var(--warn)':'var(--muted)')+';font-weight:'+(n<0?700:400)+'">'+dueLabel(t.due)+'</span></div></button>'+
+        '<button class="btn sm'+(mine?' pri':'')+'" data-a="doneTask" data-id="'+t.id+'">'+ic('check',16)+'Mark done</button></div>';
+    }).join('')+'</div></section>';
+  });
+  var done=[];state.tasks.forEach(function(t){t.history.forEach(function(x){done.push({t:t,x:x});});});
+  done.sort(function(a,b){return b.x.at-a.x.at;});
+  if(done.length){
+    h+='<section class="stack"><div class="label">Recently done</div><div class="list">'+done.slice(0,5).map(function(d){
+      return '<button class="item" data-a="task" data-id="'+d.t.id+'"><div class="ico ok">'+ic('checkc')+'</div><div class="item-main"><span class="item-title">'+esc(d.t.title)+'</span><span class="small muted">'+fmtDT(d.x.at)+' · by '+esc(nameOf(d.x.by))+(d.x.photos&&d.x.photos.length?' · '+plural(d.x.photos.length,'photo'):'')+'</span></div></button>';
+    }).join('')+'</div></section>';
+  }
+  return h;
+}
+
+function viewRepairs(){
+  var open=state.repairs.filter(function(r){return r.status!=='confirmed';}).sort(function(a,b){return last(b)-last(a);});
+  var closed=state.repairs.filter(function(r){return r.status==='confirmed';}).sort(function(a,b){return last(b)-last(a);});
+  var h='<div class="between"><h1 class="h1">Repairs</h1><button class="btn sm pri" data-a="newRepair">'+ic('plus',16)+(me()==='tenant'?'Report':'Log issue')+'</button></div>';
+  function card(r){var need=repairNeed(r,me());return '<button class="item" data-a="repair" data-id="'+r.id+'"><div class="ico '+(r.urgency==='Emergency'?'dan':'acc')+'">'+ic(r.type==='Plumbing'?'drop':'wrench')+'</div><div class="item-main"><span class="item-title">'+esc(r.title)+'</span><span class="small muted">'+esc(r.room)+' · '+esc(r.type)+' · Updated '+fmtD(last(r))+'</span>'+(need?'<span class="small" style="color:var(--accent);font-weight:700">'+esc(need)+'</span>':'')+'</div><span class="pill '+STATUS_PILL[r.status]+'">'+STATUS_LABEL[r.status]+'</span></button>';}
+  h+='<section class="stack"><div class="label">Open</div>'+(open.length?'<div class="list">'+open.map(card).join('')+'</div>':'<div class="note">No open repairs.</div>')+'</section>';
+  if(closed.length)h+='<section class="stack"><div class="label">Closed</div><div class="list">'+closed.map(card).join('')+'</div></section>';
+  return h;
+}
+function last(r){return r.events.length?r.events[r.events.length-1].at:r.createdAt;}
+
+function viewRepair(){
+  var r=getR(ui.repair);if(!r){ui.repair=null;return viewRepairs();}
+  var role=me(),si=STATUS.indexOf(r.status);
+  var h=backBar('closeRepair','Repairs');
+  h+='<section class="stack"><div class="row" style="flex-wrap:wrap;gap:8px"><span class="pill '+STATUS_PILL[r.status]+'">'+STATUS_LABEL[r.status]+'</span>'+(r.urgency==='Emergency'?'<span class="pill p-dan">Emergency</span>':'<span class="pill p-mute">'+esc(r.urgency)+'</span>')+'</div>'+
+    '<h1 class="h2">'+esc(r.title)+'</h1><span class="small muted">'+esc(r.room)+' · '+esc(r.type)+' · Reported by '+esc(nameOf(r.by))+', '+fmtDT(r.createdAt)+'</span></section>';
+  h+='<div class="steps" aria-label="Progress: '+STATUS_LABEL[r.status]+'">'+STATUS.map(function(s,i){return '<div class="'+(i<si?'done':i===si?'cur':'')+'"><i></i>'+STATUS_LABEL[s]+'</div>';}).join('')+'</div>';
+  if(r.desc)h+='<p style="margin:0">'+esc(r.desc)+'</p>';
+  if(r.photos.length)h+=photoGrid(r.photos);
+  if(r.schedule&&(r.status==='scheduled'||r.status==='progress')){
+    h+='<div class="card stack"><div class="row"><div class="ico acc">'+ic('cal')+'</div><div class="item-main"><span class="item-title">Visit: '+fmtWD(r.schedule.date)+', '+esc(r.schedule.window)+'</span><span class="small muted">Written entry notice from '+esc(state.unit.landlord)+'</span></div></div>'+
+      (r.schedule.note?'<span class="small">'+esc(r.schedule.note)+'</span>':'')+
+      '<span class="small" style="font-weight:700;color:'+(r.schedule.ack?'var(--ok)':'var(--warn)')+'">'+(r.schedule.ack?'Tenant acknowledged '+fmtDT(r.schedule.ack):'Not yet acknowledged by tenant')+'</span></div>';
+  }
+  // Actions
+  var acts='';
+  if(role==='landlord'){
+    if(r.status==='submitted')acts='<button class="btn pri" data-a="rSeen" data-id="'+r.id+'">Mark as seen</button><button class="btn" data-a="rSchedule" data-id="'+r.id+'">Schedule visit</button>';
+    else if(r.status==='seen')acts='<button class="btn pri" data-a="rSchedule" data-id="'+r.id+'">'+ic('cal',18)+'Schedule visit</button>';
+    else if(r.status==='scheduled')acts='<button class="btn pri" data-a="rStart" data-id="'+r.id+'">Start work</button><button class="btn" data-a="rSchedule" data-id="'+r.id+'">Reschedule</button>';
+    else if(r.status==='progress')acts='<button class="btn pri" data-a="rFixed" data-id="'+r.id+'">'+ic('check',18)+'Mark fixed</button>';
+    else if(r.status==='fixed')acts='<div class="note">Waiting for '+esc(state.unit.tenant)+' to confirm the fix.</div>';
+  }else{
+    if(r.status==='scheduled'&&r.schedule&&!r.schedule.ack)acts='<button class="btn pri" data-a="rAck" data-id="'+r.id+'">'+ic('check',18)+'Acknowledge visit</button>';
+    else if(r.status==='fixed')acts='<button class="btn pri" data-a="rConfirm" data-id="'+r.id+'">'+ic('check',18)+'Confirm fixed</button><button class="btn" data-a="rNotFixed" data-id="'+r.id+'">Still not fixed</button>';
+    else if(r.status==='submitted'||r.status==='seen')acts='<div class="note">'+(r.status==='submitted'?'Sent to ':'Seen by ')+esc(state.unit.landlord)+'. You’ll be notified when a visit is scheduled.</div>';
+  }
+  if(acts)h+='<div class="btn-row" style="flex-wrap:wrap">'+acts+'</div>';
+  // Activity
+  h+='<section class="stack"><div class="label">Activity</div><div class="list">'+r.events.map(function(e){
+    return '<div class="act"><div class="av '+e.by+'">'+initials(e.by)+'</div><div class="item-main"><span class="small"><b>'+esc(nameOf(e.by))+'</b> <span class="muted">'+fmtDT(e.at)+'</span></span><span'+(e.kind==='status'?' class="small muted"':'')+'>'+esc(e.text)+'</span>'+(e.photos&&e.photos.length?'<div style="margin-top:6px">'+photoGrid(e.photos)+'</div>':'')+'</div></div>';
+  }).join('')+'</div><span class="xs muted">'+ic('lock',13)+' Entries are time-stamped and can’t be edited or deleted.</span></section>';
+  h+='<form class="stack" data-form="comment" data-id="'+r.id+'"><div class="field"><label for="cmt">Add a comment</label><textarea id="cmt" name="text" class="inp" placeholder="Write an update for '+esc(nameOf(other()))+'"></textarea></div>'+
+    '<div id="pending">'+pendingHtml('pending')+'</div><div class="btn-row"><button type="submit" class="btn pri">Send</button></div></form>';
+  return h;
+}
+function pendingHtml(target){return photoGrid(ui.pending,target);}
+
+function viewRecords(){
+  var h='<div class="between"><h1 class="h1">Records</h1><button class="btn sm pri" data-a="newWalk">'+ic('plus',16)+'Walkthrough</button></div>';
+  h+='<p class="small muted" style="margin:0">Room-by-room condition records with dated photos, signed by both sides. Compare any walkthrough with move-in.</p>';
+  var ws=state.walks.slice().sort(function(a,b){return a.date<b.date?1:-1;});
+  h+='<div class="list">'+ws.map(function(w){
+    var pill=w.status==='draft'?['Draft','p-mute']:w.status==='signing'?['Signing','p-vio']:['Signed','p-ok'];
+    return '<button class="item" data-a="walk" data-id="'+w.id+'"><div class="ico vio">'+ic('camera')+'</div><div class="item-main"><span class="item-title">'+esc(w.kind)+' walkthrough</span><span class="small muted">'+fmtD(w.date,true)+' · '+esc(walkStatusText(w))+'</span></div><span class="pill '+pill[1]+'">'+pill[0]+'</span></button>';
+  }).join('')+'</div>';
+  return h;
+}
+
+function viewWalk(){
+  var w=getW(ui.walk);if(!w){ui.walk=null;return viewRecords();}
+  var base=w.baseId?getW(w.baseId):null,edit=w.status==='draft';
+  var ri=Math.min(ui.room,w.rooms.length-1),room=w.rooms[ri],broom=base?base.rooms[ri]:null;
+  var p=walkProgress(w);
+  var h=backBar('closeWalk','Records');
+  h+='<section class="stack"><h1 class="h2">'+esc(w.kind)+' walkthrough</h1><span class="small muted">'+fmtD(w.date,true)+' · Room '+(ri+1)+' of '+w.rooms.length+(base?' · compared with move-in, '+fmtD(base.date,true):'')+'</span>'+
+    (edit?'<div class="progress" aria-label="'+p.done+' of '+p.tot+' items checked"><i style="width:'+Math.round(p.done/p.tot*100)+'%"></i></div>':'')+'</section>';
+  h+='<div class="chips" role="group" aria-label="Rooms">'+w.rooms.map(function(r,i){return '<button class="chip" data-a="room" data-i="'+i+'" aria-pressed="'+(i===ri)+'">'+esc(r.name)+(roomDone(r)?' ✓':'')+'</button>';}).join('')+'</div>';
+  h+='<section class="stack"><div class="label">'+esc(room.name)+'</div><div class="list">'+room.items.map(function(it,ii){
+    var b=broom?broom.items[ii]:null,changed=b&&it.cond&&b.cond!==it.cond;
+    var top='<div class="between"><span class="item-title">'+esc(it.name)+'</span>'+(changed?'<span class="pill p-dan">Changed</span>':'')+'</div>'+(b?'<span class="xs muted">Move-in: '+esc(b.cond)+(b.note?' · '+esc(b.note):'')+'</span>':'');
+    if(edit){
+      return '<div class="stack" style="padding:12px 14px;gap:8px">'+top+'<div class="seg" role="group" aria-label="Condition of '+esc(it.name)+'">'+['Good','Fair','Damaged'].map(function(c){return '<button class="c-'+c+'" data-a="cond" data-ri="'+ri+'" data-ii="'+ii+'" data-c="'+c+'" aria-pressed="'+(it.cond===c)+'">'+c+'</button>';}).join('')+'</div>'+
+        ((it.cond&&it.cond!=='Good')||it.note?'<label class="vh" for="n'+ri+'_'+ii+'">Note on '+esc(it.name)+'</label><textarea id="n'+ri+'_'+ii+'" class="inp" style="min-height:60px" data-input="itemNote" data-ri="'+ri+'" data-ii="'+ii+'" placeholder="Describe what you see">'+esc(it.note)+'</textarea>':'')+'</div>';
+    }
+    var pc=it.cond==='Good'?'p-ok':it.cond==='Fair'?'p-warn':'p-dan';
+    return '<div class="stack" style="padding:12px 14px;gap:4px"><div class="between"><span class="item-title">'+esc(it.name)+'</span><span class="pill '+pc+'">'+esc(it.cond)+'</span></div>'+(it.note?'<span class="small">'+esc(it.note)+'</span>':'')+(b&&b.cond!==it.cond?'<span class="xs chg">Move-in: '+esc(b.cond)+'</span>':'')+'</div>';
+  }).join('')+'</div></section>';
+  h+='<section class="stack"><div class="label">Photos of the '+esc(room.name.toLowerCase())+'</div>'+(photoGrid(room.photos,edit?'room':null)||'<div class="note">No photos.</div>')+(edit?'<span class="xs muted">In the full app, photos are taken with the camera and stamped with the date and time. Here you can upload any photo.</span>':'')+'</section>';
+  var nav='';
+  if(ri>0)nav+='<button class="btn" data-a="room" data-i="'+(ri-1)+'">Previous</button>';
+  if(ri<w.rooms.length-1)nav+='<button class="btn pri" data-a="room" data-i="'+(ri+1)+'">Next: '+esc(w.rooms[ri+1].name)+'</button>';
+  else if(edit||w.status==='signing')nav+='<button class="btn pri" data-a="review">Review and sign</button>';
+  h+='<div class="btn-row">'+nav+'</div>';
+  if(w.status!=='draft'){
+    h+='<div class="btn-row">'+(base?'<button class="btn" data-a="compare">Compare with move-in</button>':'')+(w.status==='signing'?'':'<button class="btn" data-a="review">View signatures</button>')+'</div>';
+  }
+  return h;
+}
+
+function walkChanges(w){
+  var base=w.baseId?getW(w.baseId):null,out=[];
+  w.rooms.forEach(function(r,ri){r.items.forEach(function(it,ii){var b=base?base.rooms[ri].items[ii]:null;
+    if(it.cond&&((b&&b.cond!==it.cond)||(!b&&it.cond==='Damaged')))out.push({room:r.name,item:it.name,from:b?b.cond:null,to:it.cond,note:it.note});});});
+  return out;
+}
+function viewReview(){
+  var w=getW(ui.walk),role=me(),p=walkProgress(w),ch=walkChanges(w),complete=p.done===p.tot;
+  var h=backBar('closeReview',w.kind+' walkthrough');
+  h+='<h1 class="h2">Review and sign</h1>';
+  var cnt={Good:0,Fair:0,Damaged:0};w.rooms.forEach(function(r){r.items.forEach(function(i){if(i.cond)cnt[i.cond]++;});});
+  h+='<div class="stats"><div class="stat"><b style="color:var(--ok)">'+cnt.Good+'</b><span>Good</span></div><div class="stat"><b style="color:var(--warn)">'+cnt.Fair+'</b><span>Fair</span></div><div class="stat"><b style="color:var(--danger)">'+cnt.Damaged+'</b><span>Damaged</span></div></div>';
+  if(!complete)h+='<div class="note warn">'+plural(p.tot-p.done,'item')+' still to check before this can be signed.</div>';
+  if(w.baseId){
+    h+='<section class="stack"><div class="label">Changes since move-in</div>'+(ch.length?'<div class="list">'+ch.map(function(c){return '<div class="stack" style="padding:12px 14px;gap:2px"><span class="item-title">'+esc(c.room)+': '+esc(c.item)+'</span><span class="small"><span class="muted">'+esc(c.from||'')+'</span> → <span class="chg">'+esc(c.to)+'</span></span>'+(c.note?'<span class="small muted">'+esc(c.note)+'</span>':'')+'</div>';}).join('')+'</div>':'<div class="note">No changes from move-in.</div>')+'</section>';
+  }
+  h+='<section class="stack"><div class="label">Signatures</div><div class="list">'+['landlord','tenant'].map(function(r){
+    var s=w.sig[r];
+    return '<div class="stack" style="padding:12px 14px;gap:6px"><div class="between"><span class="item-title">'+esc(nameOf(r))+' <span class="muted small">('+roleLabel(r).toLowerCase()+')</span></span>'+(s?'<span class="pill p-ok">Signed</span>':'<span class="pill p-mute">Not signed</span>')+'</div>'+
+      (s?'<span class="xs muted">'+fmtDT(s.at)+'</span>'+(s.img?'<img class="sigimg" src="'+s.img+'" alt="Signature of '+esc(s.name)+'">':'<span style="font-family:var(--display);font-style:italic;font-size:20px">'+esc(s.name)+'</span>')+(s.note?'<div class="note warn"><b>Noted:</b> '+esc(s.note)+'</div>':''):'')+'</div>';
+  }).join('')+'</div></section>';
+  if(w.status!=='signed'&&!w.sig[role]){
+    h+='<form class="stack" data-form="sign"><div class="field"><span class="flabel" id="siglab">Sign with your finger or mouse</span><canvas class="sig" id="sigpad" aria-labelledby="siglab"></canvas><div class="between"><span class="xs muted">Or leave blank to sign with your typed name.</span><button type="button" class="linkbtn" data-a="clearSig">Clear</button></div></div>'+
+      '<div class="field"><label for="signame">Full name</label><input id="signame" name="name" class="inp" value="'+esc(nameOf(role))+'"></div>'+
+      '<div class="field"><label for="signote">Anything you see differently? (optional)</label><textarea id="signote" name="note" class="inp" placeholder="Your note is attached to the signed record for both sides to see"></textarea></div>'+
+      '<button type="submit" class="btn pri"'+(complete?'':' disabled')+'>'+ic('pen',18)+'Sign walkthrough</button></form>';
+  }else if(w.status!=='signed'){
+    h+='<div class="note">You’ve signed. Switch to '+roleLabel(other()).toLowerCase()+' at the top to sign as '+esc(nameOf(other()))+'.</div>';
+  }
+  return h;
+}
+
+function viewCompare(){
+  var w=getW(ui.walk),base=getW(w.baseId);
+  var h=backBar('closeCompare',w.kind+' walkthrough');
+  h+='<h1 class="h2">Compared with move-in</h1><span class="small muted">Move-in '+fmtD(base.date,true)+' vs '+w.kind.toLowerCase()+' '+fmtD(w.date,true)+'</span>';
+  w.rooms.forEach(function(r,ri){
+    var b=base.rooms[ri];
+    h+='<section class="stack"><div class="label">'+esc(r.name)+'</div><div class="cmp"><div class="stack"><span class="xs muted">Move-in</span>'+(b.photos[0]?photoTile(b.photos[0]):'<div class="ph">No photo</div>')+'</div><div class="stack"><span class="xs muted">'+esc(w.kind)+'</span>'+(r.photos[0]?photoTile(r.photos[0]):'<div class="ph">No photo</div>')+'</div></div>'+
+      '<div class="tbl-wrap"><table><thead><tr><th>Item</th><th>Move-in</th><th>'+esc(w.kind)+'</th></tr></thead><tbody>'+r.items.map(function(it,ii){var bi=b.items[ii],c=it.cond&&bi.cond!==it.cond;return '<tr><td>'+esc(it.name)+'</td><td>'+esc(bi.cond)+'</td><td'+(c?' class="chg"':'')+'>'+esc(it.cond||'Not checked')+(it.note&&c?'<div class="xs muted" style="font-weight:400">'+esc(it.note)+'</div>':'')+'</td></tr>';}).join('')+'</tbody></table></div></section>';
+  });
+  return h;
+}
+
+function viewDocs(){
+  var cats=['All','Lease','Manuals','Warranties','Insurance','Receipts','Notices','Other'];
+  var docs=visibleDocs();
+  var h='<div class="between"><h1 class="h1">Documents</h1><button class="btn sm pri" data-a="newDoc">'+ic('plus',16)+'Upload</button></div>';
+  h+='<div class="field"><label class="vh" for="docq">Search documents</label><input id="docq" class="inp" type="search" placeholder="Search leases, manuals, receipts" value="'+esc(ui.docQ)+'" data-input="docQ"></div>';
+  h+='<div class="chips" role="group" aria-label="Category">'+cats.map(function(c){var n=c==='All'?docs.length:docs.filter(function(d){return d.cat===c;}).length;if(!n&&c!=='All')return '';return '<button class="chip" data-a="docCat" data-c="'+c+'" aria-pressed="'+(ui.docCat===c)+'">'+c+' '+n+'</button>';}).join('')+'</div>';
+  var exp=docs.filter(function(d){return d.expires&&daysFrom(d.expires)>=0&&daysFrom(d.expires)<=120;}).sort(function(a,b){return a.expires<b.expires?-1:1;});
+  if(exp.length&&ui.docCat==='All'&&!ui.docQ){
+    h+='<section class="stack"><div class="label">Expiring soon</div><div class="list">'+exp.map(function(d){var n=daysFrom(d.expires);return '<button class="item" data-a="doc" data-id="'+d.id+'"><div class="item-main"><span class="item-title">'+esc(d.title)+'</span><span class="small muted">'+esc(d.cat)+' · added by '+esc(nameOf(d.owner))+'</span></div><span class="pill '+(n<=30?'p-warn':'p-mute')+'">'+fmtD(d.expires)+'</span></button>';}).join('')+'</div></section>';
+  }
+  h+='<section class="stack"><div class="label">'+(ui.docCat==='All'?'All documents':esc(ui.docCat))+'</div><div id="doclist">'+docListHtml()+'</div></section>';
+  return h;
+}
+function docListHtml(){
+  var q=ui.docQ.trim().toLowerCase();
+  var docs=visibleDocs().filter(function(d){return (ui.docCat==='All'||d.cat===ui.docCat)&&(!q||(d.title+' '+d.cat).toLowerCase().indexOf(q)>=0);}).sort(function(a,b){return b.addedAt-a.addedAt;});
+  if(!docs.length)return '<div class="note">No documents match.</div>';
+  return '<div class="list">'+docs.map(function(d){
+    var tsrc=d.scans&&d.scans.length?d.scans[0].src:d.file&&d.file.src;
+    var thumb=tsrc?'<div class="ico" style="overflow:hidden;padding:0"><img src="'+tsrc+'" alt="" style="width:40px;height:40px;object-fit:cover"></div>':'<div class="ico vio" style="font-size:11px;font-weight:700">'+esc(fileKind(d))+'</div>';
+    return '<button class="item" data-a="doc" data-id="'+d.id+'">'+thumb+'<div class="item-main"><span class="item-title">'+esc(d.title)+'</span><span class="small muted">'+esc(d.cat)+' · '+fmtD(d.addedAt)+' · '+esc(nameOf(d.owner))+'</span></div>'+(d.vis==='private'?'<span class="pill p-mute">'+ic('lock',12)+'&nbsp;Private</span>':'')+'</button>';
+  }).join('')+'</div>';
+}
+function fileKind(d){if(!d.file)return 'PDF';var n=d.file.name||'';var e=n.split('.').pop().toUpperCase();return e.length<=4?e:'FILE';}
+
+function viewTimeline(){
+  var f=ui.tlFilter;
+  var items=visibleTimeline().filter(function(e){return f==='all'||e.kind===f;}).sort(function(a,b){return b.at-a.at;});
+  var h=backBar('closeTimeline','Home');
+  h+='<div class="between"><h1 class="h1">Unit history</h1><button class="btn sm" data-a="report">'+ic('export',16)+'Export</button></div><div class="note">'+ic('lock',14)+' Every entry shows who did what and when. Nothing can be edited or deleted; corrections are added as new entries.'+(me()==='tenant'?' You see entries from the start of your tenancy, '+fmtD(tenantFrom(),true)+'.':'')+'</div>';
+  h+='<div class="chips" role="group" aria-label="Filter history">'+[['all','All'],['repairs','Repairs'],['upkeep','Upkeep'],['records','Records'],['docs','Documents']].map(function(c){return '<button class="chip" data-a="tlFilter" data-f="'+c[0]+'" aria-pressed="'+(f===c[0])+'">'+c[1]+'</button>';}).join('')+'</div>';
+  var lastDay='';
+  h+='<div class="stack">';
+  var groupOpen=false;
+  items.forEach(function(e){
+    var day=fmtD(e.at,true);
+    if(day!==lastDay){if(groupOpen)h+='</div>';h+='<div class="label" style="margin-top:6px">'+day+'</div><div class="list">';groupOpen=true;lastDay=day;}
+    h+='<div class="act"><div class="av '+e.by+'">'+initials(e.by)+'</div><div class="item-main"><span class="small"><b>'+esc(nameOf(e.by))+'</b> <span class="muted">'+fmtT(e.at)+'</span></span><span class="small">'+esc(e.text)+'</span></div></div>';
+  });
+  if(groupOpen)h+='</div>';
+  if(!items.length)h+='<div class="note">Nothing here yet.</div>';
+  h+='</div>';
+  return h;
+}
+
+function viewReport(){
+  var u=state.unit,now=Date.now(),role=me(),from=exportFrom(),sec=ui.exp.sec;
+  var h=backBar('closeReport',ui.timeline?'Unit history':'Home');
+  h+='<h1 class="h1">Export unit record</h1>';
+  // Options
+  h+='<section class="card stack"><div class="label">What to include</div>';
+  if(role==='landlord'){
+    h+='<div class="chips" role="group" aria-label="Time period">'+[['all','All tenancies'],['current','Current tenancy'],['12m','Last 12 months']].map(function(r){return '<button class="chip" data-a="expRange" data-r="'+r[0]+'" aria-pressed="'+(ui.exp.range===r[0])+'">'+r[1]+'</button>';}).join('')+'</div>';
+  }else{
+    h+='<div class="note">Covers your tenancy, from '+fmtD(from,true)+' to today. Entries from before you moved in are not included.</div>';
+  }
+  h+='<div class="chips" role="group" aria-label="Sections" style="flex-wrap:wrap">'+[['repairs','Repairs'],['upkeep','Upkeep'],['records','Walkthroughs'],['docs','Documents'],['history','Full history']].map(function(x){return '<button class="chip" data-a="expSec" data-s="'+x[0]+'" aria-pressed="'+!!sec[x[0]]+'">'+(sec[x[0]]?'✓ ':'')+x[1]+'</button>';}).join('')+'</div>';
+  h+='<span class="xs muted">Below is a preview. In the full version, Download PDF saves this as a file to email, print or bring to a hearing.</span>';
+  h+='<button class="btn pri" disabled>'+ic('export',18)+'Download PDF (full version)</button></section>';
+  // Report
+  var periodTxt=from?fmtD(from,true)+' to '+fmtD(now,true):'all tenancies, '+fmtD(u.prevFrom||u.tenancyFrom||u.leaseStart,true)+' to '+fmtD(now,true);
+  h+='<article class="report"><div class="stack" style="gap:4px"><span class="label">'+esc(APP_NAME)+' unit record</span><h2 class="h2">'+esc(u.address)+', '+esc(u.city)+'</h2>'+
+    '<span class="small muted">Prepared by '+esc(nameOf(role))+' ('+roleLabel(role).toLowerCase()+'), '+fmtDT(now)+'</span>'+
+    '<span class="small muted">Period: '+periodTxt+'</span>'+
+    '<span class="small muted">Landlord: '+esc(u.landlord)+' · '+(role==='landlord'&&!from&&u.prevTenant?'Tenants: '+esc(u.prevTenant)+' ('+fmtD(u.prevFrom,true)+' to '+fmtD(u.prevTo,true)+'), '+esc(u.tenant)+' (from '+fmtD(u.tenancyFrom||u.leaseStart,true)+')':'Tenant: '+esc(u.tenant)+' · Lease '+fmtD(u.leaseStart,true)+' to '+fmtD(u.leaseEnd,true))+'</span></div>';
+  var any=false;
+  if(sec.repairs){any=true;var reps=state.repairs.filter(function(r){return r.createdAt>=from;});
+    h+='<section class="stack"><h3>Repairs</h3>'+(reps.length?'<div class="tbl-wrap"><table><thead><tr><th>Issue</th><th>Reported</th><th>Status</th><th>Last update</th></tr></thead><tbody>'+reps.map(function(r){return '<tr><td>'+esc(r.title)+'</td><td>'+fmtD(r.createdAt,true)+'</td><td>'+STATUS_LABEL[r.status]+'</td><td>'+fmtD(last(r),true)+'</td></tr>';}).join('')+'</tbody></table></div>':'<p class="small muted" style="margin:0">None in this period.</p>')+'</section>';}
+  if(sec.upkeep){any=true;var done=[];state.tasks.forEach(function(t){t.history.forEach(function(x){if(x.at>=from)done.push([t,x]);});});done.sort(function(a,b){return b[1].at-a[1].at;});
+    h+='<section class="stack"><h3>Upkeep completed</h3>'+(done.length?'<div class="tbl-wrap"><table><thead><tr><th>Task</th><th>Done</th><th>By</th><th>Note</th></tr></thead><tbody>'+done.map(function(d){return '<tr><td>'+esc(d[0].title)+'</td><td>'+fmtD(d[1].at,true)+'</td><td>'+esc(nameOf(d[1].by))+'</td><td>'+esc(d[1].note||'')+'</td></tr>';}).join('')+'</tbody></table></div>':'<p class="small muted" style="margin:0">None in this period.</p>')+'</section>';}
+  if(sec.records){any=true;var ws=state.walks.filter(function(w){return parseD(w.date).getTime()>=from-14*DAY;});
+    h+='<section class="stack"><h3>Condition walkthroughs</h3>'+(ws.length?'<div class="tbl-wrap"><table><thead><tr><th>Walkthrough</th><th>Date</th><th>Landlord</th><th>Tenant</th><th>Changes</th></tr></thead><tbody>'+ws.map(function(w){function sg(r){return w.sig[r]?'Signed '+fmtD(w.sig[r].at,true)+(w.sig[r].note?' (with note)':''):'Not signed';}var ch=w.baseId?walkChanges(w).length:null;return '<tr><td>'+esc(w.kind)+'</td><td>'+fmtD(w.date,true)+'</td><td>'+sg('landlord')+'</td><td>'+sg('tenant')+'</td><td>'+(ch===null?'Baseline':plural(ch,'change'))+'</td></tr>';}).join('')+'</tbody></table></div>':'<p class="small muted" style="margin:0">None in this period.</p>')+'</section>';}
+  if(sec.docs){any=true;var ds=visibleDocs().slice().sort(function(a,b){return a.cat<b.cat?-1:a.cat>b.cat?1:a.title<b.title?-1:1;});
+    h+='<section class="stack"><h3>Documents on file</h3><div class="tbl-wrap"><table><thead><tr><th>Document</th><th>Category</th><th>Added</th><th>Expires</th></tr></thead><tbody>'+ds.map(function(d){return '<tr><td>'+esc(d.title)+(d.vis==='private'?' <span class="xs muted">(private)</span>':'')+'</td><td>'+esc(d.cat)+'</td><td>'+fmtD(d.addedAt,true)+'</td><td>'+(d.expires?fmtD(d.expires,true):'')+'</td></tr>';}).join('')+'</tbody></table></div></section>';}
+  if(sec.history){any=true;var tl=visibleTimeline().filter(function(e){return e.at>=from;}).sort(function(a,b){return a.at-b.at;});
+    h+='<section class="stack"><h3>Full history ('+plural(tl.length,'entry')+')</h3><div class="tbl-wrap"><table><thead><tr><th>When</th><th>Who</th><th>What</th></tr></thead><tbody>'+tl.map(function(e){return '<tr><td style="white-space:nowrap">'+fmtD(e.at,true)+'<div class="xs muted">'+fmtT(e.at)+'</div></td><td>'+esc(nameOf(e.by))+'</td><td>'+esc(e.text)+'</td></tr>';}).join('')+'</tbody></table></div></section>';}
+  if(!any)h+='<p class="small muted" style="margin:0">Choose at least one section above.</p>';
+  h+='<p class="xs muted" style="margin:0">This record lists entries exactly as they were made in '+esc(APP_NAME)+', with the time each was added. It is not legal advice.</p></article>';
+  return h;
+}
+
+/* ---------- Buying ---------- */
+var FOUNDING_LEFT=12; // prototype sample: spots left of 20
+function bill(){if(!state.billing)state.billing={trialDays:9,units:0,storage10:0,tenantCopy:false,tenantExtra5:0,founding:false};return state.billing;}
+function unitRate(total){return total>=10?49:total>=5?59.8:79;}
+function foundingOn(){var b=bill();return b.founding||FOUNDING_LEFT>0;}
+function cad(n){return '$'+(Math.round(n*100)/100).toLocaleString('en-CA',{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2});}
+var buy={units:1,storage:0};
+function buyHtml(){
+  var b=bill(),total=b.units+buy.units,rate=unitRate(total),units=buy.units*rate,disc=foundingOn()?Math.round(units*20)/100:0,st=buy.storage*19,sub=units-disc+st,tax=sub*0.13;
+  var tier=total>=10?'10 or more units: $49 each':total>=5?'5 to 9 units: $299 per 5 (about $60 each)':'1 to 4 units: $79 each';
+  var hint=total===4&&rate>59.8?'<div class="note">Add 1 more unit and pay less: at 5 units each one is about $60.</div>':'';
+  var fnd=foundingOn()?'<div class="founding" style="margin:0">'+ic('check',18)+'<span><b>Founding offer applied:</b> 20% off. '+(b.founding?'Yours for every unit you add.':FOUNDING_LEFT+' of 20 spots left.')+'</span></div>':'';
+  return '<div class="stack-lg">'+
+    '<div class="card stack"><div class="between"><span class="item-title">Units</span><div class="row" style="gap:8px"><button class="icon-btn" data-a="buyUnits" data-d="-1" aria-label="Fewer units">−</button><b style="min-width:28px;text-align:center;font-size:20px">'+buy.units+'</b><button class="icon-btn" data-a="buyUnits" data-d="1" aria-label="More units">+</button></div></div>'+
+    '<span class="small muted">You own '+plural(b.units,'unit')+'. After this purchase: '+plural(total,'unit')+'. Price tier: '+tier+'.</span></div>'+
+    '<div class="card stack"><div class="between"><span class="item-title">Extra storage <span class="small muted">(10 GB each, $19)</span></span><div class="row" style="gap:8px"><button class="icon-btn" data-a="buyStorage" data-d="-1" aria-label="Less storage">−</button><b style="min-width:28px;text-align:center;font-size:20px">'+buy.storage+'</b><button class="icon-btn" data-a="buyStorage" data-d="1" aria-label="More storage">+</button></div></div><span class="small muted">Each unit already includes 5 GB.</span></div>'+
+    fnd+hint+
+    '<div class="card stack" style="gap:8px">'+
+      '<div class="kv"><span>'+plural(buy.units,'unit')+' × '+cad(rate)+'</span><span>'+cad(units)+'</span></div>'+
+      (disc?'<div class="kv" style="color:var(--ok)"><span>Founding offer, 20% off units</span><span>−'+cad(disc)+'</span></div>':'')+
+      (st?'<div class="kv"><span>Extra storage, '+buy.storage*10+' GB</span><span>'+cad(st)+'</span></div>':'')+
+      '<div class="kv"><span>HST 13% (Ontario)</span><span>'+cad(tax)+'</span></div>'+
+      '<div class="kv" style="font-weight:700;font-size:16px;border-top:1px solid var(--line);padding-top:8px"><span style="color:var(--ink)">Total, one-time</span><span>'+cad(sub+tax)+'</span></div>'+
+    '</div>'+
+    '<button class="btn pri" data-a="toPay">'+ic('lock',18)+'Continue to secure payment</button>'+
+    '<span class="xs muted" style="text-align:center">Tax is worked out by province at checkout. One-time purchase, no subscription. All sales are final; try it free for 14 days first.</span></div>';
+}
+function refreshBuy(){var b=document.querySelector('#sheet .sheet > .stack-lg');if(b)b.outerHTML=buyHtml();}
+function sheetBuy(){buy.units=Math.max(1,buy.units);openSheet('Buy units',buyHtml());}
+function sheetOwnCopy(){openSheet('Buy your own copy','<div class="stack-lg"><p style="margin:0">Keep this rental’s record for good, even after you move out. It stays tied to your email.</p>'+
+  '<div class="card stack" style="gap:8px"><div class="kv"><span>Own copy: '+esc(state.unit.address)+'</span><span>$29</span></div>'+
+  '<label class="check"><input type="checkbox" id="ex5" data-change="ex5"'+(buy.ex5?' checked':'')+'> <span>Add 5 GB of extra storage ($9). Your copy includes 2 GB.</span></label>'+
+  '<div class="kv"><span>HST 13% (Ontario)</span><span id="ocTax">'+cad((29+(buy.ex5?9:0))*0.13)+'</span></div>'+
+  '<div class="kv" style="font-weight:700;font-size:16px;border-top:1px solid var(--line);padding-top:8px"><span style="color:var(--ink)">Total, one-time</span><span id="ocTot">'+cad((29+(buy.ex5?9:0))*1.13)+'</span></div></div>'+
+  '<button class="btn pri" data-a="toPayTenant">'+ic('lock',18)+'Continue to secure payment</button><span class="xs muted" style="text-align:center">Another rental later is another $29. All sales are final.</span></div>');}
+function sheetPay(kind){
+  var amt=kind==='tenant'?(29+(buy.ex5?9:0))*1.13:(function(){var b=bill(),t=b.units+buy.units;return (buy.units*unitRate(t)+buy.storage*19)*1.13;})();
+  openSheet('Secure payment','<div class="stack-lg"><div class="note">'+ic('lock',14)+' In the full version this is Stripe’s secure payment page. My Documented Property never sees your card number.</div>'+
+    '<div class="card stack" style="gap:10px;opacity:.75"><div class="field"><span class="flabel">Email for receipt</span><input class="inp" disabled value="'+esc(session||'')+'"></div><div class="field"><span class="flabel">Card</span><input class="inp" disabled placeholder="1234 1234 1234 1234"></div><div class="grid2"><input class="inp" disabled placeholder="MM / YY"><input class="inp" disabled placeholder="CVC"></div><span class="xs muted">Apple Pay and Google Pay also accepted.</span></div>'+
+    '<button class="btn pri" data-a="paid" data-k="'+kind+'">Pay '+cad(amt)+' (prototype: no charge)</button></div>');
+}
+
+/* ---------- Backup ---------- */
+function backupTree(){
+  var u=state.unit,role=me(),parts=u.address.split(','),street=parts[0].trim(),unitName=(parts[1]||'Unit').trim();
+  function fol(name,sub,kids){return '<li><span class="tf">'+ic('folder',16)+'<span><b>'+esc(name)+'</b>'+(sub?'<span class="xs muted">'+esc(sub)+'</span>':'')+'</span></span>'+(kids?'<ul>'+kids+'</ul>':'')+'</li>';}
+  function file(name,sub){return '<li><span class="tf">'+ic('doc',16)+'<span>'+esc(name)+(sub?'<span class="xs muted">'+esc(sub)+'</span>':'')+'</span></span></li>';}
+  var from=role==='tenant'?tenantFrom():0;
+  var reps=state.repairs.filter(function(r){return r.createdAt>=from;});
+  var done=0;state.tasks.forEach(function(t){t.history.forEach(function(h){if(h.at>=from)done++;});});
+  var photos=0;state.walks.forEach(function(w){w.rooms.forEach(function(r){photos+=r.photos.length;});});
+  var cur=fol('Tenancy: '+u.tenant+' ('+fmtD(u.tenancyFrom||u.leaseStart,true)+' to now)','',
+    fol('Repairs',plural(reps.length,'repair')+', with photos and invoices')+
+    fol('Upkeep',plural(done,'completed task')+', with proof photos')+
+    fol('Walkthroughs',plural(state.walks.length,'walkthrough')+': signed PDFs and '+plural(photos,'photo'))+
+    fol('Documents',plural(visibleDocs().length,'file')+(role==='tenant'?', including your private ones':'')));
+  var kids;
+  if(role==='landlord'){
+    var prev=u.prevTenant?fol('Tenancy: '+u.prevTenant+' ('+fmtD(u.prevFrom,true)+' to '+fmtD(u.prevTo,true)+')','Repairs, upkeep, walkthroughs and documents from that tenancy'):'';
+    kids=fol(street+', '+u.city,'',fol(unitName,'',file('Unit record.pdf','The full dated record, all tenancies')+file('Unit history.xlsx','Every entry, one row each')+cur+prev))+
+      '<li class="xs muted" style="padding-top:6px">Each of your other properties gets its own folder here, by address.</li>';
+  }else{
+    kids=fol(street+', '+u.city,'',fol(unitName,'',file('My tenancy record.pdf','Your dated record, from move-in')+file('My tenancy history.xlsx','Every entry, one row each')+cur));
+  }
+  return '<div class="tree"><ul>'+fol('My Documented Property backup '+isoD(d0()),'',file('Read me.pdf','What is in this backup and how it is organized')+kids)+'</ul></div>';
+}
+function sheetBackup(){
+  var role=me(),u=state.unit;
+  var lead=role==='landlord'?'A copy of everything for all your properties, organized by address, then unit, then tenancy. It opens on your computer without the website.':
+    'A copy of everything from your tenancy at '+esc(u.address)+': exactly what you can see here, nothing more. It opens on your computer without the website.';
+  var notes=role==='landlord'?
+    '<li>Photos and files are the originals; records come as a PDF you can read and a spreadsheet you can sort.</li><li>The online record stays the official, dated version. A copy on your computer can be changed, so it carries less weight as evidence.</li>':
+    '<li>Free while you’re invited, and for 90 days after your tenancy ends.</li><li>Want to keep this rental’s record for good? Buy your own copy for $29: it stays yours after you move out, and your backup covers every rental you’ve bought a copy of.</li>';
+  openSheet('Download a full backup','<div class="stack-lg"><p style="margin:0">'+lead+'</p>'+backupTree()+'<ul class="small muted" style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px">'+notes+'</ul>'+
+    '<button class="btn pri" disabled>'+ic('export',18)+'Download backup (.zip) in the full version</button><span class="xs muted" style="text-align:center">The prototype shows what the backup will contain. The full version builds the zip and emails you when it’s ready.</span></div>');
+}
+
+/* ---------- Sheets ---------- */
+function openSheet(title,body){
+  var s=$('#sheet');
+  s.innerHTML='<div class="sheet" role="dialog" aria-modal="true" aria-label="'+esc(title)+'"><div class="grab"></div><div class="sheet-head"><h2 class="h2">'+esc(title)+'</h2><button class="icon-btn" data-a="closeSheet" aria-label="Close">'+ic('x')+'</button></div>'+body+'</div>';
+  s.hidden=false;
+  var c=s.querySelector('[data-a="closeSheet"]');if(c)try{c.focus({preventScroll:true});}catch(e){}
+}
+function closeSheet(){var s=$('#sheet');s.hidden=true;s.innerHTML='';ui.pending=[];}
+
+function sheetReport(){
+  ui.pending=[];
+  var rooms=ROOMS.map(function(r){return r.name;}).concat(['Outside','Whole unit']);
+  var types=['Plumbing','Electrical','Heating and cooling','Appliances','Windows and doors','Pests','Other'];
+  openSheet(me()==='tenant'?'Report an issue':'Log an issue',
+    '<form class="stack-lg" data-form="report">'+
+    '<div class="field"><label for="rt">What’s wrong?</label><input id="rt" name="title" class="inp" required placeholder="e.g. Dishwasher won’t drain"></div>'+
+    '<div class="grid2"><div class="field"><label for="rr">Room</label><select id="rr" name="room" class="inp">'+rooms.map(function(r){return '<option>'+esc(r)+'</option>';}).join('')+'</select></div>'+
+    '<div class="field"><label for="ry">Type</label><select id="ry" name="type" class="inp">'+types.map(function(r){return '<option>'+esc(r)+'</option>';}).join('')+'</select></div></div>'+
+    '<fieldset style="border:none;margin:0;padding:0" class="field"><legend class="flabel" style="padding:0;margin-bottom:6px;font-weight:600;font-size:14px">How urgent?</legend><div class="urg">'+
+    [['Routine','This month'],['Soon','This week'],['Emergency','No heat, flooding']].map(function(u,i){return '<label><input type="radio" name="urgency" value="'+u[0]+'"'+(i===0?' checked':'')+' data-change="urgency"><b'+(u[0]==='Emergency'?' style="color:var(--danger)"':'')+'>'+u[0]+'</b><span>'+u[1]+'</span></label>';}).join('')+'</div></fieldset>'+
+    '<div id="emerg" hidden class="note dan">For flooding, no heat in winter or a power problem, also phone '+esc(state.unit.landlord)+' right away. If you smell gas, leave the unit and call 911 or your gas utility from outside.</div>'+
+    '<div class="field"><span class="flabel">Photos or video</span><div id="pending">'+pendingHtml('pending')+'</div></div>'+
+    '<div class="field"><label for="rd">Details</label><textarea id="rd" name="desc" class="inp" placeholder="When did it start? Anything you’ve tried?"></textarea></div>'+
+    '<span class="small muted" style="text-align:center">Sends to '+esc(nameOf(other()))+' and adds it to the unit record.</span>'+
+    '<button type="submit" class="btn pri">Send request</button></form>');
+}
+/* ---------- Help and feedback ---------- */
+var HELP_KINDS=[['help','Get help','A question about using it'],['problem','Report a problem','Something isn’t working'],['idea','Request a feature','An idea to make it better']];
+var TICKET_STATUS={received:['Received','p-mute'],progress:['In progress','p-warn'],answered:['Answered','p-ok'],planned:['Planned','p-acc'],done:['Added','p-ok'],declined:['Not planned','p-mute']};
+function tickets(){if(!state.tickets)state.tickets=[{id:'MDP-1041',kind:'idea',subject:'Seasonal checklist for pools and hot tubs',by:'landlord',at:Date.now()-86400000*12,status:'planned',reply:'Thanks! This is on the list for spring.'}];return state.tickets;}
+function sheetHelp(kind){
+  kind=kind||'help';var mine=tickets().filter(function(t){return t.by===me();}).slice().reverse();
+  openSheet('Help and feedback','<div class="stack-lg">'+
+    '<form class="stack-lg" data-form="help">'+
+    '<fieldset style="border:none;margin:0;padding:0" class="field"><legend class="flabel" style="padding:0;margin-bottom:6px;font-weight:600;font-size:14px">What can we help with?</legend><div class="urg">'+
+    HELP_KINDS.map(function(k){return '<label><input type="radio" name="kind" value="'+k[0]+'"'+(k[0]===kind?' checked':'')+'><b>'+k[1]+'</b><span>'+k[2]+'</span></label>';}).join('')+'</div></fieldset>'+
+    '<div class="field"><label for="hs">Subject</label><input id="hs" name="subject" class="inp" required maxlength="120" placeholder="e.g. How do I invite a second tenant?"></div>'+
+    '<div class="field"><label for="hm">Details</label><textarea id="hm" name="msg" class="inp" required placeholder="What were you trying to do? For a problem, what happened instead?"></textarea></div>'+
+    '<div class="field"><span class="flabel">Screenshot (optional)</span><div id="pending">'+pendingHtml('pending')+'</div></div>'+
+    '<span class="small muted" style="text-align:center">Goes to the Tripoint Inspections Inc. support team. We reply by email to '+esc(session||'your sign-in email')+', usually within 2 business days. Your unit records are not shared unless you ask us to look at them.</span>'+
+    '<button type="submit" class="btn pri">Send</button></form>'+
+    (mine.length?'<div class="stack"><h3 style="margin:0;font-size:17px">Your requests</h3><div class="list">'+mine.map(function(t){var st=TICKET_STATUS[t.status];return '<div class="item" style="cursor:default"><div class="item-main"><span class="item-title">'+esc(t.subject)+'</span><span class="xs muted">'+t.id+' · '+HELP_KINDS.filter(function(k){return k[0]===t.kind;})[0][1]+' · '+fmtDT(t.at)+'</span>'+(t.reply?'<span class="small">'+esc(t.reply)+'</span>':'')+'</div><span class="pill '+st[1]+'">'+st[0]+'</span></div>';}).join('')+'</div></div>':'')+
+    '</div>');
+}
+function sheetSchedule(id){
+  var r=getR(id),s=r.schedule||{};
+  openSheet('Schedule a visit','<form class="stack-lg" data-form="schedule" data-id="'+id+'">'+
+    '<div class="grid2"><div class="field"><label for="sd">Date</label><input id="sd" type="date" name="date" class="inp" required value="'+(s.date||isoD(d0(1)))+'" min="'+isoD(d0())+'"></div>'+
+    '<div class="field"><label for="sw">Time</label><select id="sw" name="window" class="inp">'+['8 to 10 AM','9 to 11 AM','12 to 2 PM','3 to 5 PM','6 to 8 PM'].map(function(x){return '<option'+(s.window===x?' selected':'')+'>'+x+'</option>';}).join('')+'</select></div></div>'+
+    '<div class="field"><label for="sn">Note for the tenant</label><textarea id="sn" name="note" class="inp" placeholder="Who is coming and what they’ll do">'+esc(s.note||'')+'</textarea></div>'+
+    '<label class="check"><input type="checkbox" name="notice" checked required> <span>This is my written notice to enter the unit. Notice rules differ by province.</span></label>'+
+    '<button type="submit" class="btn pri">Send schedule to '+esc(state.unit.tenant)+'</button></form>');
+}
+function sheetFixed(id){
+  ui.pending=[];
+  openSheet('Mark as fixed','<form class="stack-lg" data-form="fixed" data-id="'+id+'">'+
+    '<div class="field"><label for="fn">What was done?</label><textarea id="fn" name="note" class="inp" required placeholder="e.g. Replaced the trap and supply line"></textarea></div>'+
+    '<div class="field"><span class="flabel">After photos</span><div id="pending">'+pendingHtml('pending')+'</div></div>'+
+    '<div class="field"><label for="fi">Invoice or receipt (optional)</label><input id="fi" name="invoice" type="file" class="inp" style="padding:10px"></div>'+
+    '<span class="small muted">'+esc(state.unit.tenant)+' will be asked to confirm the fix.</span>'+
+    '<button type="submit" class="btn pri">Mark fixed</button></form>');
+}
+function sheetNotFixed(id){
+  ui.pending=[];
+  openSheet('Still not fixed','<form class="stack-lg" data-form="notfixed" data-id="'+id+'">'+
+    '<div class="field"><label for="nf">What’s still wrong?</label><textarea id="nf" name="text" class="inp" required></textarea></div>'+
+    '<div class="field"><span class="flabel">Photos</span><div id="pending">'+pendingHtml('pending')+'</div></div>'+
+    '<button type="submit" class="btn pri">Send back to '+esc(state.unit.landlord)+'</button></form>');
+}
+function sheetDone(id){
+  ui.pending=[];
+  var t=getT(id);
+  var next=t.months?fmtD(isoD(addMonths(d0(),t.months)),true):'not repeating';
+  openSheet(t.title,'<form class="stack-lg" data-form="done" data-id="'+id+'">'+
+    '<div class="field"><span class="flabel">Proof photo (recommended)</span><div id="pending">'+pendingHtml('pending')+'</div></div>'+
+    '<div class="field"><label for="dn">Note (optional)</label><textarea id="dn" name="note" class="inp" placeholder="e.g. Filter size, what you checked"></textarea></div>'+
+    '<span class="small muted">'+(t.months?'Next due: '+next+'. ':'')+esc(nameOf(other()))+' will see this in the unit record.</span>'+
+    '<button type="submit" class="btn pri">'+ic('check',18)+'Mark done</button></form>');
+}
+var REPEATS=[[1,'Every month'],[2,'Every 2 months'],[3,'Every 3 months'],[4,'Every 4 months'],[6,'Every 6 months'],[12,'Every year'],[0,'One time']];
+function repeatOptions(sel){return REPEATS.map(function(r){return '<option value="'+r[0]+'"'+(r[0]===sel?' selected':'')+'>'+r[1]+'</option>';}).join('');}
+function lastDone(t){return t.history.length?Math.max.apply(null,t.history.map(function(h){return h.at;})):null;}
+function sheetTask(id){
+  var t=getT(id);
+  var hist=t.history.map(function(x){return {at:x.at,by:x.by,done:true,note:x.note,photos:x.photos};}).concat((t.changes||[]).map(function(c){return {at:c.at,by:c.by,done:false,note:c.text};})).sort(function(a,b){return b.at-a.at;});
+  var landlord=me()==='landlord';
+  openSheet(t.title,'<div class="stack-lg"><div class="card stack" style="gap:4px"><span><b>'+dueLabel(t.due)+'</b></span><span class="small muted">'+cycleLabel(t.months)+' · Responsible: '+esc(nameOf(t.owner))+' ('+roleLabel(t.owner).toLowerCase()+')</span></div>'+
+    (t.removed?'<div class="note">This task was removed from the schedule. Its history is kept in the record.</div>':
+    '<div class="btn-row"><button class="btn pri" data-a="doneTask" data-id="'+t.id+'">'+ic('check',18)+'Mark done</button>'+(landlord?'<button class="btn" data-a="editTask" data-id="'+t.id+'">'+ic('pen',18)+'Edit task</button>':'')+'</div>'+
+    (landlord?'':'<span class="xs muted">Only '+esc(state.unit.landlord)+' can change this schedule.</span>'))+
+    '<section class="stack"><div class="label">History</div>'+(hist.length?'<div class="list">'+hist.map(function(x){return '<div class="stack" style="padding:12px 14px;gap:6px"><span class="small"><b>'+esc(nameOf(x.by))+'</b> <span class="muted">'+fmtDT(x.at)+'</span> '+(x.done?'<span class="pill p-ok">Done</span>':'<span class="pill p-vio">Changed</span>')+'</span>'+(x.note?'<span class="small">'+esc(x.note)+'</span>':'')+(x.photos&&x.photos.length?photoGrid(x.photos):'')+'</div>';}).join('')+'</div>':'<div class="note">Not done yet.</div>')+'</section></div>');
+}
+function sheetEditTask(id){
+  var t=getT(id);ui.removeArm=false;
+  var ld=lastDone(t);
+  openSheet('Edit task','<form class="stack-lg" data-form="edittask" data-id="'+t.id+'">'+
+    '<div class="field"><label for="et">Task</label><input id="et" name="title" class="inp" required value="'+esc(t.title)+'"></div>'+
+    '<div class="grid2"><div class="field"><label for="eo">Who does it?</label><select id="eo" name="owner" class="inp"><option value="tenant"'+(t.owner==='tenant'?' selected':'')+'>Tenant</option><option value="landlord"'+(t.owner==='landlord'?' selected':'')+'>Landlord</option></select></div>'+
+    '<div class="field"><label for="em">Repeats</label><select id="em" name="months" class="inp" data-change="editMonths" data-id="'+t.id+'">'+repeatOptions(t.months)+'</select></div></div>'+
+    '<div class="field"><label for="ed">Next due</label><input id="ed" type="date" name="due" class="inp" required value="'+t.due+'"><span class="xs muted" id="edhint">'+(ld?'Last done '+fmtD(ld,true)+'. Changing how often it repeats updates this date.':'Not done yet.')+'</span></div>'+
+    '<span class="small muted">'+esc(state.unit.tenant)+' will be notified, and the change is added to the unit history.</span>'+
+    '<button type="submit" class="btn pri">Save changes</button>'+
+    '<button type="button" class="btn dan" data-a="removeTask" data-id="'+t.id+'">Remove task</button></form>');
+}
+function sheetNewTask(){
+  openSheet('Add upkeep task','<form class="stack-lg" data-form="newtask">'+
+    '<div class="field"><label for="nt">Task</label><input id="nt" name="title" class="inp" required placeholder="e.g. Clean range hood filter"></div>'+
+    '<div class="grid2"><div class="field"><label for="no">Who does it?</label><select id="no" name="owner" class="inp"><option value="tenant">Tenant</option><option value="landlord">Landlord</option></select></div>'+
+    '<div class="field"><label for="nm">Repeats</label><select id="nm" name="months" class="inp">'+repeatOptions(3)+'</select></div></div>'+
+    '<div class="field"><label for="nd">First due</label><input id="nd" type="date" name="due" class="inp" required value="'+isoD(d0(14))+'"></div>'+
+    '<button type="submit" class="btn pri">Add task</button></form>');
+}
+function sheetNewWalk(){
+  var draft=state.walks.find(function(w){return w.status==='draft';});
+  if(draft){ui.tab='records';ui.walk=draft.id;ui.room=0;ui.review=false;ui.compare=false;render(true);toast('Continuing the walkthrough in progress');return;}
+  openSheet('Start a walkthrough','<form class="stack-lg" data-form="newwalk"><p class="small muted" style="margin:0">Go room by room. Each item shows its move-in condition so changes are easy to spot.</p>'+
+    '<div class="list">'+[['Routine','Routine check','Any time during the tenancy'],['Move-out','Move-out','At the end of the tenancy']].map(function(k,i){return '<label class="item" style="cursor:pointer"><input type="radio" name="kind" value="'+k[0]+'"'+(i===0?' checked':'')+' style="width:22px;height:22px;accent-color:var(--accent)"><div class="item-main"><span class="item-title">'+k[1]+'</span><span class="small muted">'+k[2]+'</span></div></label>';}).join('')+'</div>'+
+    '<button type="submit" class="btn pri">Start</button></form>');
+}
+function sheetNewDoc(){
+  ui.pending=[];
+  openSheet('Add a document','<form class="stack-lg" data-form="newdoc">'+
+    '<div class="field"><span class="flabel">Take photos of the pages</span><div id="pending">'+pendingHtml('pending')+'</div><span class="xs muted">One photo per page. In the full app this opens the camera as a document scanner.</span></div>'+
+    '<div class="field"><label for="df">Or upload a file (PDF, photo)</label><input id="df" name="file" type="file" class="inp" style="padding:10px" data-file="docpick"></div>'+
+    '<div class="field"><label for="dt">Name</label><input id="dt" name="title" class="inp" required placeholder="e.g. Tenant insurance 2027"></div>'+
+    '<div class="grid2"><div class="field"><label for="dc">Category</label><select id="dc" name="cat" class="inp">'+['Lease','Manuals','Warranties','Insurance','Receipts','Notices','Other'].map(function(c){return '<option>'+c+'</option>';}).join('')+'</select></div>'+
+    '<div class="field"><label for="de">Expires (optional)</label><input id="de" type="date" name="expires" class="inp"></div></div>'+
+    '<fieldset style="border:none;margin:0;padding:0" class="stack"><legend class="flabel" style="padding:0;margin-bottom:6px;font-weight:600;font-size:14px">Who can see it?</legend>'+
+    '<label class="check"><input type="radio" name="vis" value="shared" checked> <span>Shared with '+esc(nameOf(other()))+'</span></label>'+
+    '<label class="check"><input type="radio" name="vis" value="private"> <span>Only me</span></label></fieldset>'+
+    '<button type="submit" class="btn pri">Save document</button></form>');
+}
+function sheetDoc(id){
+  var d=getDoc(id),mine=d.owner===me();
+  var scans=d.scans||[];
+  var prev=scans.length?'<div class="field"><span class="flabel">'+plural(scans.length,'page')+'</span>'+photoGrid(scans,'doc:'+d.id)+'</div>':
+    !d.file||!d.file.src?'<div class="field"><span class="flabel">'+(d.file?esc(d.file.name)+' · '+Math.max(1,Math.round(d.file.size/1024))+' KB':'No photo of this document yet')+'</span>'+photoGrid([],'doc:'+d.id)+'<span class="xs muted">Take a photo of each page to keep it on file.</span></div>':'';
+  if(d.file&&d.file.src)prev='<img src="'+d.file.src+'" alt="'+esc(d.title)+'" style="border-radius:12px;max-height:340px;object-fit:contain;background:var(--surface-2)">'+prev;
+  var r=d.repair?getR(d.repair):null;
+  openSheet(d.title,'<div class="stack-lg">'+prev+'<div class="list">'+
+    [['Category',esc(d.cat)],['Added',fmtDT(d.addedAt)+' by '+esc(nameOf(d.owner))],['Expires',d.expires?fmtD(d.expires,true):'No expiry'],['Visible to',d.vis==='shared'?'Landlord and tenant':'Only '+esc(nameOf(d.owner))]].map(function(x){return '<div class="between" style="padding:12px 14px"><span class="muted small">'+x[0]+'</span><span class="small" style="text-align:right">'+x[1]+'</span></div>';}).join('')+'</div>'+
+    (r?'<button class="btn" data-a="go" data-kind="repair" data-id="'+r.id+'">'+ic('wrench',18)+'Linked repair: '+esc(r.title)+'</button>':'')+
+    (mine?'<button class="btn" data-a="docVis" data-id="'+d.id+'">'+(d.vis==='shared'?ic('lock',18)+'Make private':'Share with '+esc(nameOf(other())))+'</button>':'')+
+    (d.file&&!d.file.src&&!scans.length?'<span class="xs muted">The prototype keeps the file name only. The full app stores and opens the file.</span>':'')+'</div>');
+}
+function sheetNotifs(){
+  var list=state.notifs.filter(function(n){return n.for===me();}).sort(function(a,b){return b.at-a.at;});
+  openSheet('Notifications',list.length?'<div class="list">'+list.map(function(n){return '<button class="item" data-a="notifGo" data-id="'+n.id+'"><div class="ico '+(n.read?'ok':'acc')+'">'+ic('bell',18)+'</div><div class="item-main"><span'+(n.read?'':' class="item-title"')+'>'+esc(n.text)+'</span><span class="xs muted">'+fmtDT(n.at)+'</span></div></button>';}).join('')+'</div>':'<div class="note">No notifications yet.</div>');
+  list.forEach(function(n){n.read=true;});save();
+  // refresh the badge behind the sheet without closing it
+  var top=document.querySelector('.top');if(top){var tmp=document.createElement('div');tmp.innerHTML=header();top.replaceWith(tmp.firstChild);}
+}
+function sheetMenu(){
+  ui.resetArm=false;
+  openSheet('About this prototype','<div class="stack-lg"><p style="margin:0">'+esc(APP_NAME)+' is a working demo with sample data for one rental unit. Switch between <b>Landlord</b> and <b>Tenant</b> at the top to see how each side’s actions show up for the other.</p>'+
+    '<div class="list">'+[['Photos','Upload from your phone or computer. The full app uses the live camera.'],['Saving',storageOk?'Changes are saved in this browser only.':'This browser isn’t saving changes, so they reset when you reload.'],['Export','Shows a preview. The full app downloads a PDF.'],['Signing in','Any email and any 6-digit code work here. The full app emails a real code, and landlord and tenant each have their own login.'],['Website first','Designed for a computer screen first, with the menu on the left. It also works on phones; a phone-friendly pass comes next.']].map(function(x){return '<div class="stack" style="padding:12px 14px;gap:2px"><span class="item-title">'+x[0]+'</span><span class="small muted">'+x[1]+'</span></div>';}).join('')+'</div>'+
+    (me()==='landlord'?'<button class="btn" data-a="buyOpen">'+ic('dollar',18)+'Buy units</button>':(bill().tenantCopy?'':'<button class="btn" data-a="ownCopy">'+ic('dollar',18)+'Buy your own copy</button>'))+
+    '<button class="btn" data-a="backup">'+ic('folder',18)+'Download a full backup</button>'+
+    '<button class="btn" data-a="help">'+ic('help',18)+'Help and feedback</button>'+
+    '<button class="btn" data-a="signOut">Sign out</button>'+
+    '<button class="btn dan" data-a="reset" id="resetbtn">Reset sample data</button></div>');
+}
+
+/* ---------- Public website ---------- */
+function lockup(size,withBy){
+  return '<button class="lock" data-a="toSite" aria-label="My Documented Property home">'+LOGO_ICON.replace('width="36" height="36"','width="'+size+'" height="'+size+'"')+'<span><b>My Documented <span class="g">Property</span></b>'+(withBy?'<small>by Tripoint Inspections Inc.</small>':'')+'</span></button>';
+}
+function viewSite(){
+  var tick=function(t){return '<li>'+ic('check',18)+'<span>'+t+'</span></li>';};
+  var h='<div class="site"><div class="proto-strip">Prototype preview. Sample content only; nothing here is live yet.</div>';
+  h+='<header class="site-top"><div class="wrap">'+lockup(40,true)+
+    '<nav class="s-links" aria-label="Homepage sections">'+[['how','How it works'],['features','Features'],['who','Who it’s for'],['compare','Compare'],['pricing','Pricing'],['faq','Questions']].map(function(x){return '<button data-a="scrollTo" data-id="'+x[0]+'">'+x[1]+'</button>';}).join('')+'</nav>'+
+    '<div class="s-actions"><button class="btn sm" data-a="toSignin">Sign in</button><button class="btn sm pri" data-a="toSignin">Get started</button></div></div></header>';
+  // Hero
+  var mockStats='<div class="stats"><div class="stat"><b style="color:var(--warn)">1</b><span>Overdue task</span></div><div class="stat"><b style="color:var(--accent)">2</b><span>Open repairs</span></div><div class="stat"><b>2</b><span>Due in 30 days</span></div></div>';
+  var mockList='<div class="list">'+
+    [['wrench','acc','Kitchen sink leaking','Visit booked · notice sent','Scheduled','p-acc'],['camera','vio','Move-in walkthrough','Signed by both · 42 photos','Signed','p-ok'],['clock','warn','Replace furnace filter','Tenant task · 5 days overdue','Overdue','p-warn']].map(function(r){return '<div class="item"><div class="ico '+r[1]+'">'+ic(r[0],18)+'</div><div class="item-main"><span class="item-title">'+r[2]+'</span><span class="xs muted">'+r[3]+'</span></div><span class="pill '+r[5]+'">'+r[4]+'</span></div>';}).join('')+'</div>';
+  h+='<section class="hero"><div class="wrap"><div class="stack-lg" style="gap:22px"><span class="eyebrow">For landlords and tenants in Canada</span>'+
+    '<h1 class="s-h">One shared record of <span>your rental.</span></h1>'+
+    '<p class="lead">Repairs, upkeep, move-in and move-out condition records, and important documents, kept in one place that landlord and tenant both see. Every entry is dated and can’t be changed later.</p>'+
+    '<div class="cta"><button class="btn pri" data-a="toSignin">Start free trial</button><button class="btn" data-a="scrollTo" data-id="how">See how it works</button></div>'+
+    '<div class="trust"><span>'+ic('check',16)+'One-time price, no subscription</span><span>'+ic('check',16)+'14-day free trial</span><span>'+ic('check',16)+'Tenants join free</span><span>'+ic('check',16)+'Data stored in Canada</span></div></div>'+
+    '<div class="mock" aria-hidden="true"><div class="mock-bar"><i></i><i></i><i></i><span>mydocumentedproperty.ca</span></div><div class="mock-body"><div class="mock-side">'+
+    [['home','Home',1],['cal','Upkeep'],['wrench','Repairs'],['camera','Records'],['doc','Docs']].map(function(x){return '<div'+(x[2]?' class="on"':'')+'>'+ic(x[0],15)+x[1]+'</div>';}).join('')+
+    '</div><div class="mock-main"><div class="stack" style="gap:2px"><span class="xs muted">Morgan Properties (landlord)</span><b style="font-family:var(--display);font-size:18px">12 Maple St, Unit B</b></div>'+mockStats+mockList+'</div></div></div></div></section>';
+  // How it works
+  h+='<section class="sec alt" id="how"><div class="wrap"><div class="sec-head"><span class="eyebrow">How it works</span><h2 class="s-h">Set up a unit in minutes</h2><p>Everything about the rental lives in one record that both sides can see, from move-in to move-out and on to the next tenant.</p></div><div class="grid3">'+
+    [['Add your rental','Enter the address, lease dates and rent. Upload the lease, appliance manuals and warranties.'],['Invite your tenant','They join free with their email address. Landlord and tenant see the same record and get notified of changes.'],['Keep it up to date','Report and track repairs, get upkeep reminders, and do signed walkthroughs at move-in, during the tenancy and at move-out.']].map(function(x,i){return '<div class="tile"><div class="num">'+(i+1)+'</div><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>';}).join('')+'</div></div></section>';
+  // Features
+  h+='<section class="sec" id="features"><div class="wrap"><div class="sec-head"><span class="eyebrow">Features</span><h2 class="s-h">Everything about the unit, on record</h2><p>Built around the things that cause most landlord and tenant disagreements: repairs, upkeep and the condition of the unit.</p></div><div class="grid3">'+
+    [['wrench','acc','Repair requests','Tenants report issues with photos. Landlords schedule visits with written entry notice and mark the work fixed, and the tenant confirms.'],
+     ['cal','acc','Upkeep reminders','Furnace filters, smoke alarms, gutters and more. Each task has an owner and a due date, and finished work is logged with proof.'],
+     ['camera','vio','Condition walkthroughs','Room-by-room records with dated photos, signed by both sides. Compare move-out with move-in side by side.'],
+     ['doc','vio','Documents','Lease, manuals, warranties, insurance and receipts in one place, with reminders before anything expires.'],
+     ['list','ok','Unit history','Every action is time-stamped and can’t be edited or deleted, so there is one clear account of what happened.'],
+     ['export','ok','Dated record export','Download a dated record of repairs, upkeep and walkthroughs for your files, your insurer or a hearing.']].map(function(x){return '<div class="tile"><div class="ico '+x[1]+'">'+ic(x[0])+'</div><h3>'+x[2]+'</h3><p>'+x[3]+'</p></div>';}).join('')+'</div></div></section>';
+  // Who it's for
+  h+='<section class="sec alt" id="who"><div class="wrap"><div class="sec-head"><span class="eyebrow">Who it’s for</span><h2 class="s-h">Fair to both sides</h2><p>Landlord and tenant work from the same record, so there is less “he said, she said”.</p></div><div class="grid2s">'+
+    '<div class="tile"><h3>For landlords and property managers</h3><ul class="ticks">'+['Keep every unit’s records in one place','Show that repairs and maintenance were done, and when','Clear move-in and move-out evidence when there’s damage','Records stay with the unit when tenants change','Rent reminders sent to your tenant'].map(tick).join('')+'</ul></div>'+
+    '<div class="tile"><h3>For tenants</h3><ul class="ticks">'+['Report repairs and follow their progress','Written notice before any visit to your unit','A signed move-in record you can point to at move-out','See your own tenancy’s records, never anyone else’s','Free when your landlord invites you'].map(tick).join('')+'</ul></div></div></div></section>';
+  // Compare
+  var Y='<span class="y" aria-label="Yes">✓</span>',N='<span class="n" aria-label="No">✗</span>',S=function(t){return '<span class="s">'+t+'</span>';};
+  var rows=[
+    ['Cost over 3 years, 1 unit',S('Free'),'<span class="s"><span class="lg">About $400 to $1,000 or more</span><span class="sm">$400 to $1,000+</span></span>','$79 once'],
+    ['One record both sides see and sign',N,S('Some'),Y],
+    ['Dated entries that can’t be changed',N,S('Some'),Y],
+    ['Signed move-in and move-out walkthrough',N,S('Often extra'),Y],
+    ['Upkeep reminders',N,S('Some'),Y],
+    ['Tenants free when invited',S('—'),S('Some'),Y],
+    ['Your data kept in Canada',S('—'),S('Rarely stated'),Y],
+    ['Backed by a local inspection company',N,N,Y]];
+  h+='<section class="sec" id="compare" style="padding-bottom:0"><div class="wrap"><div class="sec-head"><span class="eyebrow">Compare</span><h2 class="s-h">How it stacks up</h2><p>Most landlords keep records in texts, emails and paper, or pay every month for a landlord app. Here’s how a shared record you pay for once compares.</p></div>'+
+    '<div class="vs-wrap"><table class="vs"><thead><tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col"><span class="lg">Texts, email and paper</span><span class="sm">Paper and texts</span></th><th scope="col"><span class="lg">Monthly landlord apps</span><span class="sm">Monthly apps</span></th><th scope="col" class="us"><span class="lg">My Documented Property</span><span class="sm">Us</span></th></tr></thead><tbody>'+
+    rows.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td class="us">'+r[3]+'</td></tr>';}).join('')+
+    '</tbody></table></div><p class="vs-note">Monthly app costs are typical published prices for one unit over 3 years, checked October 2026. Features vary by app and plan.</p></div></section>';
+  // Pricing
+  var pc=function(name,price,unit,items,cta,feat){return '<div class="tile pcard'+(feat?' feat':'')+'"><span class="label">'+name+'</span><div class="pp"><span class="big">'+price+'</span><span class="muted small">'+unit+'</span></div><ul class="ticks">'+items.map(tick).join('')+'</ul>'+(cta?'<div class="cta" style="margin-top:auto;padding-top:6px"><button class="btn'+(feat?' pri':'')+'" data-a="toSignin">'+cta+'</button></div>':'')+'</div>';};
+  h+='<section class="sec" id="pricing"><div class="wrap"><div class="sec-head"><span class="eyebrow">Pricing</span><h2 class="s-h">Pay once. No subscription.</h2><p>Try one unit free for 14 days, then pay once per unit. Tenants invited by their landlord use it free. Prices in Canadian dollars, plus tax.</p></div>'+
+    '<div class="founding">'+ic('check',18)+'<span><b>Founding offer:</b> the first 20 landlords get 20% off every unit they add, for good.</span></div>'+
+    '<div class="grid3">'+
+    pc('Landlord · 1 to 4 units','$79','per unit, one-time',['14-day free trial on one unit','Every feature included','5 GB of photo and document storage per unit','Invite your tenant at no cost'],'Start free trial',true)+
+    pc('Landlord · more units','$299','for a 5-unit pack (about $60 a unit)',['10 or more units: $49 per unit','50 or more: ask for a quote','Licenses are yours: move one to a new unit after a sale','Extra storage: $19 per 10 GB'],'Start free trial',false)+
+    pc('Tenant','Free','when your landlord invites you',['Your tenancy, from move-in','Access for 90 days after you move out','Own copy includes 2 GB of storage; extra 5 GB for $9','Want to keep it for good? Your own copy is $29 per rental, one-time','No landlord on board? Buy your own copy and invite them to join'],'',false)+
+    '</div></div></section>';
+  // FAQ
+  h+='<section class="sec alt" id="faq"><div class="wrap"><div class="sec-head"><span class="eyebrow">Questions</span><h2 class="s-h">Common questions</h2></div><div class="faq">'+
+    [['Do I need to install anything?','No. It’s a website you sign in to from any browser on your computer, tablet or phone.'],
+     ['Can I try it before paying?','Yes. Set up one unit and use every feature free for 14 days. No card needed.'],
+     ['Can I get a refund?','Purchases are final. That’s why you can try one unit free for 14 days first, with no card needed.'],
+     ['Do I need a password?','No. You sign in with a one-time code sent to your email.'],
+     ['What does it cost tenants?','Nothing when their landlord invites them.'],
+     ['I’m a tenant. Can I buy it myself?','Yes. Your own copy is $29, one-time, for one rental. It works whether or not your landlord uses My Documented Property: you keep a dated record of repairs, upkeep, move-in photos and documents. It’s tied to your email, so it stays yours after you move out, and you can download a full backup any time. Adding another rental later is another $29.'],
+     ['My tenant invited me. Do I have to pay?','No. You can join your tenant’s record for free and use it with them. If the tenant leaves, your access ends after 90 days, so download a backup before then. To keep the record in your own account as the starting point for that unit, buy a unit license ($79, or less in a pack).'],
+     ['Can entries be changed later?','No. Entries are time-stamped and can’t be edited or deleted. Corrections are added as new entries, so the history stays complete.'],
+     ['Where is my data stored?','In Canada.'],
+     ['Is this legal advice?','No. It keeps an accurate, dated record. It doesn’t decide disputes or give legal advice.']].map(function(q){return '<details><summary>'+q[0]+'</summary><p>'+q[1]+'</p></details>';}).join('')+'</div></div></section>';
+  // Final call to action + footer
+  h+='<section class="sec"><div class="wrap final"><h2 class="s-h" style="font-size:clamp(26px,3vw,34px)">Start your unit’s record today</h2><p class="muted" style="margin:0;font-size:18px">Try it free for 14 days. Your tenant joins free.</p><div class="cta"><button class="btn pri" data-a="toSignin">Start free trial</button><button class="btn" data-a="toSignin">Sign in</button></div></div></section>';
+  h+='<footer class="site-foot"><div class="wrap">'+lockup(32,true)+'<span>One shared record of your rental. Data stored in Canada.</span><span>© 2026 Tripoint Inspections Inc. · Built by Neviirix</span></div></footer></div>';
+  return h;
+}
+
+/* ---------- Sign-in ---------- */
+function viewLogin(){
+  var big=LOGO_ICON.replace('width="36" height="36"','width="56" height="56"');
+  var h='<main class="login"><div class="login-card"><button class="linkbtn back-home" data-a="toSite">'+ic('back',16)+'Back to homepage</button><div class="brand-lockup">'+big+'<div><span class="wm">My Documented <span class="g">Property</span></span><span class="by">by Tripoint Inspections Inc.</span></div></div>';
+  if(login.step==='email'){
+    h+='<div class="stack" style="gap:4px"><h1 class="h2">Sign in</h1><span class="small muted">Your rental’s repairs, upkeep, condition records and documents in one place. No password needed.</span></div>'+
+      '<form class="stack-lg" data-form="loginEmail"><div class="field"><label for="le">Email</label><input id="le" name="email" type="email" class="inp" required autocomplete="email" inputmode="email" placeholder="you@example.com" value="'+esc(login.email)+'"></div>'+
+      '<fieldset style="border:none;margin:0;padding:0" class="field"><legend class="flabel" style="padding:0;margin-bottom:6px;font-weight:600;font-size:14px">Prototype only: sign in as</legend><div class="urg" style="grid-template-columns:repeat(2,minmax(0,1fr))">'+
+      [['landlord','Landlord',state.unit.landlord],['tenant','Tenant',state.unit.tenant]].map(function(r){return '<label><input type="radio" name="role" value="'+r[0]+'"'+(login.role===r[0]?' checked':'')+'><b>'+r[1]+'</b><span>'+esc(r[2])+'</span></label>';}).join('')+
+      '</div><span class="xs muted">In the full app your account decides this.</span></fieldset>'+
+      '<button type="submit" class="btn pri">Email me a sign-in code</button></form>'+
+      '<button class="linkbtn" data-a="signup" style="align-self:center">New landlord? Start a 14-day free trial</button>';
+  }else{
+    h+='<div class="stack" style="gap:4px"><h1 class="h2">Check your email</h1><span class="small muted">We sent a 6-digit code to <b>'+esc(login.email)+'</b>. It works once, for 10 minutes. New here? Signing in creates your account and starts your 14-day free trial; no card needed.</span></div>'+
+      '<form class="stack-lg" data-form="loginCode"><div class="field"><label for="lc">Sign-in code</label><input id="lc" name="code" class="inp code-inp" required inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000"></div>'+
+      '<div class="note xs">Prototype: no email is sent. Enter any 6 digits.</div>'+
+      '<button type="submit" class="btn pri">Sign in</button></form>'+
+      '<button class="linkbtn" data-a="loginBack" style="align-self:center">Use a different email</button>';
+  }
+  h+='<div class="login-foot">'+ic('lock',14)+'<span>A secure website. Nothing to install: sign in from any web browser. Data stored in Canada.</span></div></div></main>';
+  return h;
+}
+
+/* ---------- Render ---------- */
+function render(top){
+  if(!session){$('#app').innerHTML=login.view==='signin'?viewLogin():viewSite();if(top)window.scrollTo(0,0);return;}
+  $('#app').innerHTML='<div class="shell">'+header()+'<main class="main" id="main">'+screen()+'</main></div>'+nav();
+  if(top)window.scrollTo(0,0);
+  if(ui.review)initSig();
+}
+function go(opts){
+  ui.report=false;ui.timeline=false;ui.repair=null;ui.walk=null;ui.review=false;ui.compare=false;ui.room=0;
+  if(opts.tab)ui.tab=opts.tab;
+  if(opts.repair){ui.tab='repairs';ui.repair=opts.repair;}
+  if(opts.walk){ui.tab='records';ui.walk=opts.walk;var w=getW(opts.walk);if(w&&w.status==='signing')ui.review=true;}
+  render(true);
+}
+
+/* ---------- Signature pad ---------- */
+var sigDrawn=false;
+function initSig(){
+  var c=document.getElementById('sigpad');if(!c)return;
+  sigDrawn=false;
+  var dpr=window.devicePixelRatio||1,rect=c.getBoundingClientRect();
+  c.width=Math.round(rect.width*dpr);c.height=Math.round(rect.height*dpr);
+  var ctx=c.getContext('2d');ctx.scale(dpr,dpr);ctx.lineWidth=2.4;ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle=getComputedStyle(document.body).color;
+  var drawing=false;
+  function pt(e){var r=c.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top];}
+  c.addEventListener('pointerdown',function(e){drawing=true;sigDrawn=true;c.setPointerCapture(e.pointerId);var p=pt(e);ctx.beginPath();ctx.moveTo(p[0],p[1]);});
+  c.addEventListener('pointermove',function(e){if(!drawing)return;var p=pt(e);ctx.lineTo(p[0],p[1]);ctx.stroke();});
+  function end(){drawing=false;}
+  c.addEventListener('pointerup',end);c.addEventListener('pointercancel',end);
+}
+function sigImage(){
+  var c=document.getElementById('sigpad');if(!c||!sigDrawn)return null;
+  // Draw on white so the signature reads in both themes
+  var o=document.createElement('canvas');o.width=c.width;o.height=c.height;var x=o.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,o.width,o.height);
+  var tmp=document.createElement('canvas');tmp.width=c.width;tmp.height=c.height;var t=tmp.getContext('2d');t.drawImage(c,0,0);t.globalCompositeOperation='source-in';t.fillStyle='#1B232D';t.fillRect(0,0,tmp.width,tmp.height);
+  x.drawImage(tmp,0,0);
+  return o.toDataURL('image/jpeg',0.8);
+}
+
+/* ---------- Actions ---------- */
+var A={
+  tab:function(d){go({tab:d.t});},
+  role:function(d){if(state.role===d.r)return;state.role=d.r;save();closeSheet();if(ui.review){render();}else render();toast('Now viewing as '+nameOf(d.r));},
+  go:function(d){closeSheet();if(d.kind==='task'){go({tab:'upkeep'});}else if(d.kind==='repair')go({repair:d.id});else if(d.kind==='walk')go({walk:d.id});else if(d.kind==='doc'){go({tab:'docs'});sheetDoc(d.id);}},
+  notifs:function(){sheetNotifs();},
+  notifGo:function(d){var n=state.notifs.find(function(x){return x.id===d.id;});closeSheet();if(n&&n.go)go(n.go);},
+  menu:function(){sheetMenu();},
+  help:function(){closeSheet();sheetHelp();},
+  reset:function(d,el){if(!ui.resetArm){ui.resetArm=true;el.textContent='Tap again to reset everything';return;}var r=state.role;state=sample();state.role=r;save();closeSheet();ui.tab='home';go({tab:'home'});toast('Sample data restored');},
+  closeSheet:function(){closeSheet();},
+  backup:function(){closeSheet();sheetBackup();},
+  buyOpen:function(){closeSheet();buy.units=1;buy.storage=0;sheetBuy();},
+  buyUnits:function(d){buy.units=Math.max(1,buy.units+Number(d.d));refreshBuy();},
+  buyStorage:function(d){buy.storage=Math.max(0,buy.storage+Number(d.d));refreshBuy();},
+  toPay:function(){sheetPay('landlord');},
+  ownCopy:function(){closeSheet();buy.ex5=false;sheetOwnCopy();},
+  toPayTenant:function(){sheetPay('tenant');},
+  paid:function(d){var b=bill();if(d.k==='tenant'){b.tenantCopy=true;b.tenantExtra5+=buy.ex5?1:0;}else{if(FOUNDING_LEFT>0&&!b.founding){b.founding=true;FOUNDING_LEFT--;}b.units+=buy.units;b.storage10+=buy.storage;b.trialDays=null;}
+    save();closeSheet();render();toast(d.k==='tenant'?'Your own copy is ready. Receipt emailed.':'Payment received. '+plural(b.units,'unit')+' unlocked. Receipt emailed.');},
+  signup:function(){toast('Account sign-up comes in the full version');},
+  toSite:function(){if(session){go({tab:'home'});return;}login.view='site';login.step='email';render(true);},
+  toSignin:function(){login.view='signin';login.step='email';render(true);var e=document.getElementById('le');if(e)try{e.focus({preventScroll:true});}catch(x){}},
+  scrollTo:function(d){var el=document.getElementById(d.id);if(el){var y=el.getBoundingClientRect().top+window.scrollY-80;window.scrollTo({top:y,behavior:'smooth'});}},
+  loginBack:function(){login.step='email';render(true);},
+  signOut:function(){session=null;saveSession();closeSheet();login.view='site';login.step='email';render(true);toast('Signed out');},
+  timeline:function(){ui.timeline=true;render(true);},
+  closeTimeline:function(){ui.timeline=false;render(true);},
+  tlFilter:function(d){ui.tlFilter=d.f;render();},
+  report:function(d,el){if(!el.closest('#main')||!ui.timeline)ui.timeline=false;ui.report=true;render(true);},
+  expRange:function(d){ui.exp.range=d.r;render();},
+  expSec:function(d){ui.exp.sec[d.s]=!ui.exp.sec[d.s];render();},
+  closeReport:function(){ui.report=false;render(true);},
+  taskFilter:function(d){ui.taskFilter=d.f;render();},
+  task:function(d){sheetTask(d.id);},
+  doneTask:function(d){closeSheet();sheetDone(d.id);},
+  newTask:function(){sheetNewTask();},
+  editTask:function(d){closeSheet();sheetEditTask(d.id);},
+  removeTask:function(d,el){
+    if(!ui.removeArm){ui.removeArm=true;el.textContent='Tap again to remove this task';return;}
+    var t=getT(d.id);t.removed=true;ui.removeArm=false;
+    log('upkeep','Removed task: '+t.title+' (past completions stay in the record)');
+    notify('tenant',state.unit.landlord+' removed the task: '+t.title+'.',{tab:'upkeep'});
+    commit('Task removed');
+  },
+  newRepair:function(){sheetReport();},
+  repair:function(d){ui.repair=d.id;ui.pending=[];render(true);},
+  closeRepair:function(){ui.repair=null;ui.pending=[];render(true);},
+  rSeen:function(d){var r=getR(d.id);r.status='seen';ev(r,'status','Marked as seen');notify('tenant',state.unit.landlord+' has seen: '+r.title+'.',{repair:r.id});commit('Marked as seen');},
+  rSchedule:function(d){sheetSchedule(d.id);},
+  rStart:function(d){var r=getR(d.id);r.status='progress';ev(r,'status','Started work');notify('tenant','Work started on: '+r.title+'.',{repair:r.id});commit('Marked as in progress');},
+  rFixed:function(d){sheetFixed(d.id);},
+  rAck:function(d){var r=getR(d.id);r.schedule.ack=Date.now();ev(r,'status','Acknowledged the entry notice');notify('landlord',state.unit.tenant+' acknowledged the visit for '+r.title+'.',{repair:r.id});commit('Visit acknowledged');},
+  rConfirm:function(d){var r=getR(d.id);r.status='confirmed';ev(r,'status','Confirmed the fix');notify('landlord',state.unit.tenant+' confirmed the fix: '+r.title+'.',{repair:r.id});commit('Repair closed');},
+  rNotFixed:function(d){sheetNotFixed(d.id);},
+  newWalk:function(){sheetNewWalk();},
+  walk:function(d){go({walk:d.id});},
+  closeWalk:function(){ui.walk=null;render(true);},
+  room:function(d){ui.room=Number(d.i);render(true);},
+  cond:function(d){var w=getW(ui.walk);var it=w.rooms[d.ri].items[d.ii];it.cond=d.c;save();var y=window.scrollY;render();window.scrollTo(0,y);},
+  review:function(){ui.review=true;render(true);},
+  closeReview:function(){ui.review=false;render(true);},
+  compare:function(){ui.compare=true;render(true);},
+  closeCompare:function(){ui.compare=false;render(true);},
+  clearSig:function(){initSig();},
+  testPhoto:function(d){addPhotos(d.t,[{src:testPhotoSrc(),label:'Test photo',at:Date.now()}]);toast('Test photo added');},
+  newDoc:function(){sheetNewDoc();},
+  doc:function(d){sheetDoc(d.id);},
+  docCat:function(d){ui.docCat=d.c;render();},
+  docVis:function(d){var doc=getDoc(d.id);doc.vis=doc.vis==='shared'?'private':'shared';log('docs',(doc.vis==='shared'?'Shared ':'Made private: ')+doc.title);save();closeSheet();render();toast(doc.vis==='shared'?'Shared with '+nameOf(other()):'Now visible only to you');}
+};
+function ev(r,kind,text,photos){r.events.push({at:Date.now(),by:me(),kind:kind,text:text,photos:photos||[]});if(kind==='status')log('repairs',text+' ('+r.title+')');}
+function commit(msg){save();closeSheet();render();if(msg)toast(msg);}
+
+/* ---------- Forms ---------- */
+var F={
+  help:function(fd){
+    var n=1041+tickets().length,t={id:'MDP-'+n,kind:fd.get('kind'),subject:fd.get('subject').trim(),msg:fd.get('msg').trim(),by:me(),at:Date.now(),status:'received',reply:'',files:ui.pending.slice()};
+    tickets().push(t);save();closeSheet();toast('Sent. Your reference is '+t.id+'.');
+  },
+  loginEmail:function(fd){
+    login.email=fd.get('email').trim();login.role=fd.get('role')||'landlord';login.step='code';render(true);
+    var c=document.getElementById('lc');if(c)try{c.focus();}catch(e){}
+  },
+  loginCode:function(fd){
+    var code=(fd.get('code')||'').replace(/\s/g,'');
+    if(!/^\d{6}$/.test(code)){toast('Enter the 6-digit code');return;}
+    session=login.email;saveSession();state.role=login.role;save();login.step='email';
+    go({tab:'home'});toast('Signed in as '+nameOf(state.role));
+  },
+  report:function(fd){
+    var r={id:uid(),title:fd.get('title').trim(),room:fd.get('room'),type:fd.get('type'),urgency:fd.get('urgency'),status:'submitted',createdAt:Date.now(),by:me(),desc:fd.get('desc').trim(),photos:ui.pending.slice(),schedule:null,events:[]};
+    state.repairs.push(r);ev(r,'status',me()==='tenant'?'Reported the issue':'Logged the issue');
+    notify(other(),nameOf(me())+' reported: '+r.title+(r.urgency==='Emergency'?' (emergency)':'')+'.',{repair:r.id});
+    save();closeSheet();go({repair:r.id});toast('Sent to '+nameOf(other()));
+  },
+  schedule:function(fd,form){
+    var r=getR(form.dataset.id);var re=!!r.schedule&&r.status==='scheduled';
+    r.schedule={date:fd.get('date'),window:fd.get('window'),note:fd.get('note').trim(),ack:null};r.status='scheduled';
+    ev(r,'status',(re?'Rescheduled':'Scheduled')+' a visit: '+fmtWD(r.schedule.date)+', '+r.schedule.window+'. Written entry notice given.');
+    notify('tenant',state.unit.landlord+' '+(re?'rescheduled':'scheduled')+' a visit for '+r.title+': '+fmtWD(r.schedule.date)+', '+r.schedule.window+'.',{repair:r.id});
+    commit('Visit scheduled and notice sent');
+  },
+  fixed:function(fd,form){
+    var r=getR(form.dataset.id);var note=fd.get('note').trim();var inv=fd.get('invoice');var hasInv=inv&&inv.name;
+    r.status='fixed';ev(r,'status','Marked as fixed: '+note+(hasInv?' Invoice added to Documents.':''),ui.pending.slice());
+    if(hasInv){state.docs.push({id:uid(),title:'Invoice: '+r.title,cat:'Receipts',vis:'shared',owner:me(),addedAt:Date.now(),expires:null,file:{name:inv.name,size:inv.size},repair:r.id});log('docs','Added Invoice: '+r.title);}
+    notify('tenant',state.unit.landlord+' marked '+r.title+' as fixed. Please confirm.',{repair:r.id});
+    ui.pending=[];commit('Marked fixed. Tenant asked to confirm.');
+  },
+  notfixed:function(fd,form){
+    var r=getR(form.dataset.id);r.status='progress';ev(r,'status','Reported it’s still not fixed: '+fd.get('text').trim(),ui.pending.slice());
+    notify('landlord',state.unit.tenant+' says '+r.title+' is still not fixed.',{repair:r.id});ui.pending=[];commit('Sent back to '+state.unit.landlord);
+  },
+  comment:function(fd,form){
+    var text=fd.get('text').trim();if(!text&&!ui.pending.length){toast('Write a comment or add a photo first');return;}
+    var r=getR(form.dataset.id);ev(r,'comment',text||'Added photos',ui.pending.slice());
+    notify(other(),nameOf(me())+' commented on '+r.title+'.',{repair:r.id});ui.pending=[];save();render();toast('Comment sent');
+  },
+  done:function(fd,form){
+    var t=getT(form.dataset.id);
+    t.history.push({at:Date.now(),by:me(),note:fd.get('note').trim(),photos:ui.pending.slice()});
+    log('upkeep','Completed: '+t.title);
+    var msg='Marked done';
+    if(t.months){t.due=isoD(addMonths(d0(),t.months));msg+='. Next due '+fmtD(t.due,true);}
+    notify(other(),nameOf(me())+' completed: '+t.title+'.',{tab:'upkeep'});
+    ui.pending=[];commit(msg);
+  },
+  edittask:function(fd,form){
+    var t=getT(form.dataset.id),old=t.title,diffs=[];
+    var title=fd.get('title').trim(),owner=fd.get('owner'),months=Number(fd.get('months')),due=fd.get('due');
+    if(title&&title!==t.title)diffs.push('renamed to “'+title+'”');
+    if(owner!==t.owner)diffs.push('responsible: '+roleLabel(t.owner).toLowerCase()+' → '+roleLabel(owner).toLowerCase());
+    if(months!==t.months)diffs.push(cycleLabel(t.months).toLowerCase()+' → '+cycleLabel(months).toLowerCase());
+    if(due!==t.due)diffs.push('next due '+fmtD(t.due,true)+' → '+fmtD(due,true));
+    if(!diffs.length){closeSheet();toast('No changes');return;}
+    t.title=title||t.title;t.owner=owner;t.months=months;t.due=due;
+    var text='Changed '+old+': '+diffs.join('; ');
+    (t.changes=t.changes||[]).push({at:Date.now(),by:me(),text:text});
+    log('upkeep',text);
+    notify('tenant',state.unit.landlord+' updated an upkeep task. '+text+'.',{tab:'upkeep'});
+    commit('Task updated');
+  },
+  newtask:function(fd){
+    var t={id:uid(),title:fd.get('title').trim(),owner:fd.get('owner'),months:Number(fd.get('months')),due:fd.get('due'),history:[]};
+    state.tasks.push(t);log('upkeep','Added task: '+t.title+' ('+roleLabel(t.owner).toLowerCase()+', '+cycleLabel(t.months).toLowerCase()+')');
+    if(t.owner!==me())notify(t.owner,nameOf(me())+' added a task for you: '+t.title+', '+dueLabel(t.due).toLowerCase()+'.',{tab:'upkeep'});
+    ui.tab='upkeep';commit('Task added');
+  },
+  newwalk:function(fd){
+    var kind=fd.get('kind');var base=state.walks.find(function(w){return w.kind==='Move-in';});
+    var w={id:uid(),kind:kind,status:'draft',date:isoD(d0()),startedBy:me(),baseId:base?base.id:null,
+      rooms:base.rooms.map(function(r){return {name:r.name,items:r.items.map(function(i){return {name:i.name,cond:null,note:''};}),photos:[]};}),sig:{}};
+    state.walks.push(w);log('records','Started a '+kind.toLowerCase()+' walkthrough');save();closeSheet();go({walk:w.id});
+  },
+  sign:function(fd){
+    var w=getW(ui.walk),role=me();
+    w.sig[role]={name:(fd.get('name')||nameOf(role)).trim(),at:Date.now(),img:sigImage(),note:fd.get('note').trim()};
+    w.status=(w.sig.landlord&&w.sig.tenant)?'signed':'signing';
+    log('records','Signed the '+w.kind.toLowerCase()+' walkthrough'+(w.sig[role].note?' with a note':''));
+    if(w.status==='signing')notify(other(role),nameOf(role)+' signed the '+w.kind.toLowerCase()+' walkthrough. Please review and sign.',{walk:w.id});
+    else notify(other(role),'The '+w.kind.toLowerCase()+' walkthrough is signed by both.',{walk:w.id});
+    save();render(true);toast(w.status==='signed'?'Signed by both. Record locked.':'Signed. Waiting for '+nameOf(other(role))+'.');
+  },
+  newdoc:async function(fd){
+    var file=fd.get('file'),hasFile=file&&file.name;
+    if(!hasFile&&!ui.pending.length){toast('Take a photo or choose a file first');return;}
+    var f=null;
+    if(hasFile){f={name:file.name,size:file.size};if(/^image\//.test(file.type)){try{f.src=await readImage(file);}catch(e){}}}
+    var d={id:uid(),title:fd.get('title').trim()||(hasFile?file.name:'Scanned document'),cat:fd.get('cat'),vis:fd.get('vis'),owner:me(),addedAt:Date.now(),expires:fd.get('expires')||null,file:f,scans:ui.pending.slice()};
+    ui.pending=[];
+    state.docs.push(d);if(d.vis==='shared'){log('docs','Added '+d.title);notify(other(),nameOf(me())+' added a document: '+d.title+'.',{tab:'docs'});}
+    ui.docCat='All';save();closeSheet();go({tab:'docs'});
+    toast(!storageOk?'Uploaded, but this browser can’t keep it after reload':d.vis==='shared'?'Uploaded and shared':'Uploaded. Only you can see it.');
+  }
+};
+
+/* ---------- Events ---------- */
+document.addEventListener('click',function(e){
+  var el=e.target.closest('[data-a]');
+  if(!el){if(e.target.id==='sheet')closeSheet();return;}
+  var fn=A[el.dataset.a];if(fn){e.preventDefault();fn(el.dataset,el,e);}
+});
+document.addEventListener('submit',function(e){
+  var f=e.target.closest('form[data-form]');if(!f)return;e.preventDefault();
+  var fn=F[f.dataset.form];if(fn)fn(new FormData(f),f);
+});
+document.addEventListener('input',function(e){
+  var t=e.target,k=t.dataset&&t.dataset.input;if(!k)return;
+  if(k==='docQ'){ui.docQ=t.value;var l=document.getElementById('doclist');if(l)l.innerHTML=docListHtml();}
+  if(k==='itemNote'){var w=getW(ui.walk);w.rooms[t.dataset.ri].items[t.dataset.ii].note=t.value;save();}
+});
+document.addEventListener('change',async function(e){
+  var t=e.target;
+  if(t.dataset&&t.dataset.change==='ex5'){buy.ex5=t.checked;var v=29+(buy.ex5?9:0);var a=document.getElementById('ocTax'),b2=document.getElementById('ocTot');if(a)a.textContent=cad(v*0.13);if(b2)b2.textContent=cad(v*1.13);return;}
+  if(t.dataset&&t.dataset.change==='editMonths'){
+    var tk=getT(t.dataset.id),m=Number(t.value),ld=lastDone(tk),dueEl=document.getElementById('ed'),hint=document.getElementById('edhint');
+    if(m>0&&dueEl){var base=ld?new Date(ld):parseD(tk.due);base.setHours(0,0,0,0);var nd=addMonths(base,m);if(!ld)nd=parseD(tk.due);dueEl.value=isoD(nd);
+      if(hint)hint.textContent=ld?'Last done '+fmtD(ld,true)+', so '+cycleLabel(m).toLowerCase()+' makes it due '+fmtD(isoD(nd),true)+'. You can change this date.':'Not done yet, so the due date stays the same.';}
+    return;
+  }
+  if(t.dataset&&t.dataset.change==='urgency'){var em=document.getElementById('emerg');if(em)em.hidden=t.value!=='Emergency';return;}
+  if(!t.dataset||!t.dataset.file)return;
+  var target=t.dataset.file;
+  if(target==='docpick'){var ti=document.getElementById('dt');if(ti&&!ti.value&&t.files[0])ti.value=t.files[0].name.replace(/\.[^.]+$/,'');return;}
+  var files=Array.prototype.slice.call(t.files||[]);if(!files.length)return;
+  var added=[];
+  var failed=0;
+  for(var i=0;i<files.length;i++){try{added.push({src:await readImage(files[i]),label:'Photo',at:Date.now()});}catch(err){failed++;}}
+  if(failed)toast(failed===files.length?'Couldn’t read that photo. Try a JPG or PNG, or pick it from your photo library.':'Added '+added.length+', but '+failed+' couldn’t be read');
+  else toast(added.length===1?'Photo added':added.length+' photos added');
+  t.value='';
+  addPhotos(target,added);
+});
+function testPhotoSrc(){
+  var c=document.createElement('canvas');c.width=640;c.height=480;var x=c.getContext('2d');
+  var hue=Math.floor(Math.random()*360);
+  var g=x.createLinearGradient(0,0,640,480);g.addColorStop(0,'hsl('+hue+',35%,62%)');g.addColorStop(1,'hsl('+((hue+40)%360)+',40%,38%)');
+  x.fillStyle=g;x.fillRect(0,0,640,480);
+  x.fillStyle='rgba(255,255,255,.9)';x.font='bold 44px sans-serif';x.textAlign='center';x.fillText('Test photo',320,230);
+  x.font='26px sans-serif';x.fillText(fmtDT(Date.now()),320,280);
+  return c.toDataURL('image/jpeg',0.7);
+}
+function addPhotos(target,added){
+  if(!added.length)return;
+  if(target==='pending'){ui.pending=ui.pending.concat(added);var p=document.getElementById('pending');if(p)p.innerHTML=pendingHtml('pending');}
+  if(target.indexOf('doc:')===0){
+    var doc=getDoc(target.slice(4));if(!doc)return;
+    doc.scans=(doc.scans||[]).concat(added);
+    log('docs','Added '+plural(added.length,'page photo')+' to '+doc.title);
+    if(doc.vis==='shared')notify(other(),nameOf(me())+' added a photo of '+doc.title+'.',{tab:'docs'});
+    save();sheetDoc(doc.id);var l=document.getElementById('doclist');if(l)l.innerHTML=docListHtml();
+    return;
+  }
+  if(target==='room'){var w=getW(ui.walk);var room=w.rooms[Math.min(ui.room,w.rooms.length-1)];room.photos=room.photos.concat(added);save();var y=window.scrollY;render();window.scrollTo(0,y);if(!storageOk)toast('Photo added. This browser can’t keep it after reload.');}
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('#sheet').hidden)closeSheet();});
+
+/* ---------- Boot ---------- */
+load();
+loadSession();
+render();
+})();
+</script>
+
